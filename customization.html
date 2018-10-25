@@ -1,0 +1,2462 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Customization - BigCommerce Theme Angels - User Guide</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Customization";
+    var mkdocs_page_input_path = "customization.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-241859-16', 'tvlgiao.github.io');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="index.html" class="icon icon-home"> BigCommerce Theme Angels - User Guide</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="index.html">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="installation.html">Install the theme</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="quickstart.html">Quick Start Guide</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="customization.html">Customization</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#customization">Customization</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#read-first-customization-guideline">READ FIRST - Customization Guideline</a></li>
+        
+            <li><a class="toctree-l3" href="#headers">Headers</a></li>
+        
+            <li><a class="toctree-l3" href="#footers">Footers</a></li>
+        
+            <li><a class="toctree-l3" href="#homepage-main-carousel">Homepage Main Carousel</a></li>
+        
+            <li><a class="toctree-l3" href="#homepage-sections-manager">Homepage Sections Manager</a></li>
+        
+            <li><a class="toctree-l3" href="#custom-homepage-lingerie">CUSTOM HOMEPAGE LINGERIE:</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-featured-collections">- Section Featured Collections</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-info-icons-3-icons">- Section Info Icons (3 icons)</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-deal-of-day">- Section Deal Of Day</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-trending-products">- Section Trending Products</a></li>
+        
+            <li><a class="toctree-l3" href="#custom-homepage-shoes">CUSTOM HOMEPAGE SHOES:</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-simple-text">- Section Simple Text</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-info-icons-4-icons">- Section Info Icons (4 icons)</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-fullwidth-banner">- Section Fullwidth Banner</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-testimonials">- Section Testimonials</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-product-by-category">- Section Product By Category</a></li>
+        
+            <li><a class="toctree-l3" href="#custom-homepage-cosmetic">CUSTOM HOMEPAGE COSMETIC:</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-welcome">- Section Welcome</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-big-sales">- Section Big Sales</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-fullwidth-banner_1">- Section Fullwidth Banner</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-products-tabs">- Section Products Tabs</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-columns-banners">- Section Columns Banners</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-blog">- Section Blog</a></li>
+        
+            <li><a class="toctree-l3" href="#custom-homepage-furniture">CUSTOM HOMEPAGE FURNITURE:</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-featured-collections_1">- Section Featured Collections</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-fullwidth-banner_2">- Section Fullwidth Banner</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-products-tabs_1">- Section Products Tabs</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-blog_1">- Section Blog</a></li>
+        
+            <li><a class="toctree-l3" href="#products-sections-new-featured-bestselling">Products Sections (New / Featured / Bestselling)</a></li>
+        
+            <li><a class="toctree-l3" href="#instagram-photos-feed">Instagram Photos Feed</a></li>
+        
+            <li><a class="toctree-l3" href="#images-carousel-or-brands-carousel">Images Carousel or Brands Carousel</a></li>
+        
+            <li><a class="toctree-l3" href="#sidebar-new-products-banners-facebook">Sidebar - New Products, Banners &amp; Facebook</a></li>
+        
+            <li><a class="toctree-l3" href="#product-page-settings">Product Page Settings</a></li>
+        
+            <li><a class="toctree-l3" href="#infinite-product-loading">Infinite product loading</a></li>
+        
+            <li><a class="toctree-l3" href="#product-card-color-swatches">Product Card &amp; Color Swatches</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="faqs.html">FAQs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="support.html">Help & Support</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">BigCommerce Theme Angels - User Guide</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Customization</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div ng-app="app">
+  <!-- Modal -->
+  <div class="modal fade" id="lightbulbs_banner_1" tabindex="-1" role="dialog" aria-labelledby="lightbulbs_banner_1_label">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="lightbulbs_banner_1_label">Code Generator: Lightbulbs Banner Style 1</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="lightbulbs_banner_1_background_img">Background Image URL:</label>
+              <input ng-model="background_img" type="text" class="form-control" id="lightbulbs_banner_1_background_img" ng-init="background_img='//cdn8.bigcommerce.com/s-3qvmac4a37/product_images/uploaded_images/lightbulbs-banner-section-1-bg.jpg'">
+            </div>
+            <div class="panel-group" id="lightbulbs_banner_1_accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="lightbulbs_banner_1_item1_heading">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#lightbulbs_banner_1_accordion" href="#lightbulbs_banner_1_item1_collapse" aria-expanded="true" aria-controls="lightbulbs_banner_1_item1_collapse">
+                      Row 1
+                    </a>
+                  </h4>
+                </div>
+                <div id="lightbulbs_banner_1_item1_collapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="lightbulbs_banner_1_item1_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row1_heading">Heading:</label>
+                      <input ng-model="row1_heading" type="text" class="form-control" id="lightbulbs_banner_1_row1_heading" ng-init="row1_heading='Ceiling <br>Lights'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row1_desc">Desc:</label>
+                      <input ng-model="row1_desc" type="text" class="form-control" id="lightbulbs_banner_1_row1_desc"
+                      ng-init="row1_desc='Add some shine with a ceiling lights!'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row1_link">Button URL:</label>
+                      <input ng-model="row1_link" type="text" class="form-control" id="lightbulbs_banner_1_row1_link"
+                      ng-init="row1_link='#'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row1_button_text">Button Text:</label>
+                      <input ng-model="row1_button_text" type="text" class="form-control" id="lightbulbs_banner_1_row1_button_text"
+                      ng-init="row1_button_text='Shop Now'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row1_image_1">Image :</label>
+                      <input ng-model="row1_image_1" type="text" class="form-control" id="lightbulbs_banner_1_row1_image_1" ng-init="row1_image_1='//cdn8.bigcommerce.com/s-3qvmac4a37/product_images/uploaded_images/lightbulbs-banner-section-1-1.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row1_youtube_embed">Youtube Embed:</label>
+                      <input ng-model="row1_youtube_embed" type="text" class="form-control" id="lightbulbs_banner_1_row1_youtube_embed" ng-init="row1_youtube_embed='<iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/-vtBgNxMyZI&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen></iframe>'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="lightbulbs_banner_1_item2_heading">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#lightbulbs_banner_1_accordion" href="#lightbulbs_banner_1_item2_collapse" aria-expanded="false" aria-controls="lightbulbs_banner_1_item2_collapse">
+                      Row 2
+                    </a>
+                  </h4>
+                </div>
+                <div id="lightbulbs_banner_1_item2_collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="lightbulbs_banner_1_item2_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row2_heading">Heading:</label>
+                      <input ng-model="row2_heading" type="text" class="form-control" id="lightbulbs_banner_1_row2_heading" ng-init="row2_heading='Floor &amp; <br>Table Lamps'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row2_desc">Desc:</label>
+                      <input ng-model="row2_desc" type="text" class="form-control" id="lightbulbs_banner_1_row2_desc"
+                      ng-init="row2_desc='Add some shine with a floor lamp!<br> Our modern floor lamps'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row2_link">Button URL:</label>
+                      <input ng-model="row2_link" type="text" class="form-control" id="lightbulbs_banner_1_row2_link"
+                      ng-init="row2_link='#'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row2_button_text">Button Text:</label>
+                      <input ng-model="row2_button_text" type="text" class="form-control" id="lightbulbs_banner_1_row2_button_text"
+                      ng-init="row2_button_text='Shop Now'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row2_image_slider_1">Slider Image 1:</label>
+                      <input ng-model="row2_image_slider_1" type="text" class="form-control" id="lightbulbs_banner_1_row2_image_slider_1" ng-init="row2_image_slider_1='//cdn8.bigcommerce.com/s-3qvmac4a37/product_images/uploaded_images/lightbulbs-banner-section-1-2.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row2_link_slider_1">Image 1 URL:</label>
+                      <input ng-model="row2_link_slider_1" type="text" class="form-control" id="lightbulbs_banner_1_row2_link_slider_1"
+                      ng-init="row2_link_slider_1='#'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row2_image_slider_2">Slider Image 2:</label>
+                      <input ng-model="row2_image_slider_2" type="text" class="form-control" id="lightbulbs_banner_1_row2_image_slider_2" ng-init="row2_image_slider_2='//cdn8.bigcommerce.com/s-3qvmac4a37/product_images/uploaded_images/lightbulbs-banner-section-1-3.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row2_link_slider_2">Image 2 URL:</label>
+                      <input ng-model="row2_link_slider_2" type="text" class="form-control" id="lightbulbs_banner_1_row2_link_slider_2"
+                      ng-init="row2_link_slider_2='#'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row2_image_slider_3">Slider Image 3:</label>
+                      <input ng-model="row2_image_slider_3" type="text" class="form-control" id="lightbulbs_banner_1_row2_image_slider_3" ng-init="row2_image_slider_3='//cdn8.bigcommerce.com/s-3qvmac4a37/product_images/uploaded_images/lightbulbs-banner-section-1-4.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row2_link_slider_3">Image 3 URL:</label>
+                      <input ng-model="row2_link_slider_3" type="text" class="form-control" id="lightbulbs_banner_1_row2_link_slider_3"
+                      ng-init="row2_link_slider_3='#'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row2_image_slider_4">Slider Image 4:</label>
+                      <input ng-model="row2_image_slider_4" type="text" class="form-control" id="lightbulbs_banner_1_row2_image_slider_4" ng-init="row2_image_slider_4='//cdn8.bigcommerce.com/s-3qvmac4a37/product_images/uploaded_images/lightbulbs-banner-section-1-5.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row2_link_slider_4">Image 4 URL:</label>
+                      <input ng-model="row2_link_slider_4" type="text" class="form-control" id="lightbulbs_banner_1_row2_link_slider_4"
+                      ng-init="row2_link_slider_4='#'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="lightbulbs_banner_1_item3_heading">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#lightbulbs_banner_1_accordion" href="#lightbulbs_banner_1_item3_collapse" aria-expanded="false" aria-controls="lightbulbs_banner_1_item3_collapse">
+                      Row 3
+                    </a>
+                  </h4>
+                </div>
+                <div id="lightbulbs_banner_1_item3_collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="lightbulbs_banner_1_item3_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row3_heading">Heading:</label>
+                      <input ng-model="row3_heading" type="text" class="form-control" id="lightbulbs_banner_1_row3_heading" ng-init="row3_heading='Wall <br>Lights'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row3_desc">Desc:</label>
+                      <input ng-model="row3_desc" type="text" class="form-control" id="lightbulbs_banner_1_row3_desc"
+                      ng-init="row3_desc='Add some shine with a ceiling lights!'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row3_link">Button URL:</label>
+                      <input ng-model="row3_link" type="text" class="form-control" id="lightbulbs_banner_1_row3_link"
+                      ng-init="row3_link='#'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row3_button_text">Button Text:</label>
+                      <input ng-model="row3_button_text" type="text" class="form-control" id="lightbulbs_banner_1_row3_button_text"
+                      ng-init="row3_button_text='Shop Now'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row3_image_1">Image 1:</label>
+                      <input ng-model="row3_image_1" type="text" class="form-control" id="lightbulbs_banner_1_row3_image_1" ng-init="row3_image_1='//cdn8.bigcommerce.com/s-3qvmac4a37/product_images/uploaded_images/lightbulbs-banner-section-1-6.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_1_row3_image_2">Image 2:</label>
+                      <input ng-model="row3_image_2" type="text" class="form-control" id="lightbulbs_banner_1_row3_image_2" ng-init="row3_image_2='//cdn8.bigcommerce.com/s-3qvmac4a37/product_images/uploaded_images/lightbulbs-banner-section-1-7.png'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div hljs include="'/samples/lightbulbs_home_banner1.txt'" compile="true" id="lightbulbs_home_banner1_code" class="highlight-code"></div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-clipboard-target="#lightbulbs_home_banner1_code">Copy Code</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- modal #lightbulbs_banner_1 -->
+  <!-- Modal -->
+  <div class="modal fade" id="lightbulbs_banner_2" tabindex="-1" role="dialog" aria-labelledby="lightbulbs_banner_2_label">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="lightbulbs_banner_2_label">Code Generator: Lightbulbs Banner Style 2</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="lightbulbs_banner_2_background_img">Background Image URL:</label>
+              <input ng-model="background_img" type="text" class="form-control" id="lightbulbs_banner_2_background_img" ng-init="background_img='//cdn8.bigcommerce.com/s-3qvmac4a37/product_images/uploaded_images/lightbulbs-banner-section-2-bg.jpg'">
+            </div>
+            <div class="panel-group" id="lightbulbs_banner_2_accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="lightbulbs_banner_2_item1_heading">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#lightbulbs_banner_2_accordion" href="#lightbulbs_banner_2_item1_collapse" aria-expanded="true" aria-controls="lightbulbs_banner_2_item1_collapse">
+                      Row 1
+                    </a>
+                  </h4>
+                </div>
+                <div id="lightbulbs_banner_2_item1_collapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="lightbulbs_banner_2_item1_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row1_heading">Heading:</label>
+                      <input ng-model="row1_heading" type="text" class="form-control" id="lightbulbs_banner_2_row1_heading" ng-init="row1_heading='LED Light Bulds'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row1_desc">Desc:</label>
+                      <input ng-model="row1_desc" type="text" class="form-control" id="lightbulbs_banner_2_row1_desc"
+                      ng-init="row1_desc='Add some shine with a LED light! <br>Our modern LED light'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row1_link">Button URL:</label>
+                      <input ng-model="row1_link" type="text" class="form-control" id="lightbulbs_banner_2_row1_link"
+                      ng-init="row1_link='#'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row1_button_text">Button Text:</label>
+                      <input ng-model="row1_button_text" type="text" class="form-control" id="lightbulbs_banner_2_row1_button_text"
+                      ng-init="row1_button_text='Shop Now'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row1_image_1">Image :</label>
+                      <input ng-model="row1_image_1" type="text" class="form-control" id="lightbulbs_banner_2_row1_image_1" ng-init="row1_image_1='//cdn8.bigcommerce.com/s-3qvmac4a37/product_images/uploaded_images/lightbulbs-banner-section-2-1.gif'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="lightbulbs_banner_2_item2_heading">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#lightbulbs_banner_2_accordion" href="#lightbulbs_banner_2_item2_collapse" aria-expanded="false" aria-controls="lightbulbs_banner_2_item2_collapse">
+                      Row 2
+                    </a>
+                  </h4>
+                </div>
+                <div id="lightbulbs_banner_2_item2_collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="lightbulbs_banner_2_item2_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row2_heading">Heading:</label>
+                      <input ng-model="row2_heading" type="text" class="form-control" id="lightbulbs_banner_2_row2_heading" ng-init="row2_heading='Outdoor <br>&amp; Landscape'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row2_desc">Desc:</label>
+                      <input ng-model="row2_desc" type="text" class="form-control" id="lightbulbs_banner_2_row2_desc"
+                      ng-init="row2_desc='Add some shine with a ceiling lights!'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row2_link">Button URL:</label>
+                      <input ng-model="row2_link" type="text" class="form-control" id="lightbulbs_banner_2_row2_link"
+                      ng-init="row2_link='#'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row2_button_text">Button Text:</label>
+                      <input ng-model="row2_button_text" type="text" class="form-control" id="lightbulbs_banner_2_row2_button_text"
+                      ng-init="row2_button_text='Shop Now'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row2_image_1">Image:</label>
+                      <input ng-model="row2_image_1" type="text" class="form-control" id="lightbulbs_banner_2_row2_image_1" ng-init="row2_image_1='//cdn8.bigcommerce.com/s-3qvmac4a37/product_images/uploaded_images/lightbulbs-banner-section-2-2.jpg'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="lightbulbs_banner_2_item3_heading">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#lightbulbs_banner_2_accordion" href="#lightbulbs_banner_2_item3_collapse" aria-expanded="false" aria-controls="lightbulbs_banner_2_item3_collapse">
+                      Row 3
+                    </a>
+                  </h4>
+                </div>
+                <div id="lightbulbs_banner_2_item3_collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="lightbulbs_banner_2_item3_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row3_heading">Heading:</label>
+                      <input ng-model="row3_heading" type="text" class="form-control" id="lightbulbs_banner_2_row3_heading" ng-init="row3_heading='Lighting Accessories'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row3_desc">Desc:</label>
+                      <input ng-model="row3_desc" type="text" class="form-control" id="lightbulbs_banner_2_row3_desc"
+                      ng-init="row3_desc='Explore brilliant selection of home lighting hardware and accessories  like light bulbs, lamp adapter kits.'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row3_link">Button URL:</label>
+                      <input ng-model="row3_link" type="text" class="form-control" id="lightbulbs_banner_2_row3_link"
+                      ng-init="row3_link='#'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row3_button_text">Button Text:</label>
+                      <input ng-model="row3_button_text" type="text" class="form-control" id="lightbulbs_banner_2_row3_button_text"
+                      ng-init="row3_button_text='Shop Now'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row3_image_slider_1">Slider Image 1:</label>
+                      <input ng-model="row3_image_slider_1" type="text" class="form-control" id="lightbulbs_banner_2_row3_image_slider_1" ng-init="row3_image_slider_1='//cdn8.bigcommerce.com/s-3qvmac4a37/product_images/uploaded_images/lightbulbs-banner-section-2-3.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row3_link_slider_1">Image 1 URL:</label>
+                      <input ng-model="row3_link_slider_1" type="text" class="form-control" id="lightbulbs_banner_2_row3_link_slider_1"
+                      ng-init="row3_link_slider_1='#'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row3_image_slider_2">Slider Image 2:</label>
+                      <input ng-model="row3_image_slider_2" type="text" class="form-control" id="lightbulbs_banner_2_row3_image_slider_2" ng-init="row3_image_slider_2='//cdn8.bigcommerce.com/s-3qvmac4a37/product_images/uploaded_images/lightbulbs-banner-section-2-4.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row3_link_slider_2">Image 2 URL:</label>
+                      <input ng-model="row3_link_slider_2" type="text" class="form-control" id="lightbulbs_banner_2_row3_link_slider_2"
+                      ng-init="row3_link_slider_2='#'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row3_image_slider_3">Slider Image 3:</label>
+                      <input ng-model="row3_image_slider_3" type="text" class="form-control" id="lightbulbs_banner_2_row3_image_slider_3" ng-init="row3_image_slider_3='//cdn8.bigcommerce.com/s-3qvmac4a37/product_images/uploaded_images/lightbulbs-banner-section-2-5.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row3_link_slider_3">Image 3 URL:</label>
+                      <input ng-model="row3_link_slider_3" type="text" class="form-control" id="lightbulbs_banner_2_row3_link_slider_3"
+                      ng-init="row3_link_slider_3='#'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row3_image_slider_4">Slider Image 4:</label>
+                      <input ng-model="row3_image_slider_4" type="text" class="form-control" id="lightbulbs_banner_2_row3_image_slider_4" ng-init="row3_image_slider_4='//cdn8.bigcommerce.com/s-3qvmac4a37/product_images/uploaded_images/lightbulbs-banner-section-2-6.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="lightbulbs_banner_2_row3_link_slider_4">Image 4 URL:</label>
+                      <input ng-model="row3_link_slider_4" type="text" class="form-control" id="lightbulbs_banner_2_row3_link_slider_4"
+                      ng-init="row3_link_slider_4='#'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div hljs include="'/samples/lightbulbs_home_banner2.txt'" compile="true" id="lightbulbs_home_banner2_code" class="highlight-code"></div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-clipboard-target="#lightbulbs_home_banner2_code">Copy Code</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- modal #lightbulbs_banner_2 -->
+  <!-- Modal -->
+  <div class="modal fade" id="chiara_home_banner1_modal" tabindex="-1" role="dialog" aria-labelledby="chiara_home_banner1_modal_label">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="chiara_home_banner1_modal_label">Code Generator: Homepage 5 Banners</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="panel-group" id="chiara_home_banner1_accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_home_banner1_item1_heading">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#chiara_home_banner1_accordion" href="#chiara_home_banner1_item1_collapse" aria-expanded="true" aria-controls="chiara_home_banner1_item1_collapse">
+                      Banner 1
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_home_banner1_item1_collapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="chiara_home_banner1_item1_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item1_img_bg">Background Image URL:</label>
+                      <input ng-model="item1_img_bg" type="text" class="form-control" id="chiara_home_banner1_item1_img_bg" ng-init="item1_img_bg='https://cdn7.bigcommerce.com/s-g0pakqdzwl/product_images/uploaded_images/furniture-banner1.jpg?t=1534872898'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item1_img_fg">Front Image URL:</label>
+                      <input ng-model="item1_img_fg" type="text" class="form-control" id="chiara_home_banner1_item1_img_fg" ng-init="item1_img_fg='https://cdn7.bigcommerce.com/s-g0pakqdzwl/product_images/uploaded_images/furniture-banner1a.png?t=1534872899'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item1_alt">Image Alt:</label>
+                      <input ng-model="item1_alt" type="text" class="form-control" id="chiara_home_banner1_item1_alt">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item1_link">Link URL:</label>
+                      <input ng-model="item1_link" type="text" class="form-control" id="chiara_home_banner1_item1_link">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_home_banner1_item2_heading">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#chiara_home_banner1_accordion" href="#chiara_home_banner1_item2_collapse" aria-expanded="false" aria-controls="chiara_home_banner1_item2_collapse">
+                      Banner 2
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_home_banner1_item2_collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="chiara_home_banner1_item2_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item2_img_bg">Background Image URL:</label>
+                      <input ng-model="item2_img_bg" type="text" class="form-control" id="chiara_home_banner1_item2_img_bg" ng-init="item2_img_bg='https://cdn7.bigcommerce.com/s-g0pakqdzwl/product_images/uploaded_images/furniture-banner2.jpg?t=1534872900'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item2_img_fg">Front Image URL:</label>
+                      <input ng-model="item2_img_fg" type="text" class="form-control" id="chiara_home_banner1_item2_img_fg" ng-init="item2_img_fg='https://cdn7.bigcommerce.com/s-g0pakqdzwl/product_images/uploaded_images/furniture-banner2a.png?t=1534872900'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item2_alt">Image Alt:</label>
+                      <input ng-model="item2_alt" type="text" class="form-control" id="chiara_home_banner1_item2_alt">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item2_link">Link URL:</label>
+                      <input ng-model="item2_link" type="text" class="form-control" id="chiara_home_banner1_item2_link">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_home_banner1_item3_heading">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#chiara_home_banner1_accordion" href="#chiara_home_banner1_item3_collapse" aria-expanded="false" aria-controls="chiara_home_banner1_item3_collapse">
+                      Banner 3
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_home_banner1_item3_collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="chiara_home_banner1_item3_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item3_img_bg">Background Image URL:</label>
+                      <input ng-model="item3_img_bg" type="text" class="form-control" id="chiara_home_banner1_item3_img_bg" ng-init="item3_img_bg='https://cdn7.bigcommerce.com/s-g0pakqdzwl/product_images/uploaded_images/furniture-banner2.jpg?t=1534872900'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item3_img_fg">Front Image URL:</label>
+                      <input ng-model="item3_img_fg" type="text" class="form-control" id="chiara_home_banner1_item3_img_fg" ng-init="item3_img_fg='https://cdn7.bigcommerce.com/s-g0pakqdzwl/product_images/uploaded_images/furniture-banner2a.png?t=1534872900'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item3_alt">Image Alt:</label>
+                      <input ng-model="item3_alt" type="text" class="form-control" id="chiara_home_banner1_item3_alt">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item3_link">Link URL:</label>
+                      <input ng-model="item3_link" type="text" class="form-control" id="chiara_home_banner1_item3_link">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_home_banner1_item4_heading">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#chiara_home_banner1_accordion" href="#chiara_home_banner1_item4_collapse" aria-expanded="false" aria-controls="chiara_home_banner1_item4_collapse">
+                      Banner 4
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_home_banner1_item4_collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="chiara_home_banner1_item4_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item4_img_bg">Background Image URL:</label>
+                      <input ng-model="item4_img_bg" type="text" class="form-control" id="chiara_home_banner1_item4_img_bg" ng-init="item4_img_bg='https://cdn7.bigcommerce.com/s-g0pakqdzwl/product_images/uploaded_images/furniture-banner2.jpg?t=1534872900'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item4_img_fg">Front Image URL:</label>
+                      <input ng-model="item4_img_fg" type="text" class="form-control" id="chiara_home_banner1_item4_img_fg" ng-init="item4_img_fg='https://cdn7.bigcommerce.com/s-g0pakqdzwl/product_images/uploaded_images/furniture-banner2a.png?t=1534872900'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item4_alt">Image Alt:</label>
+                      <input ng-model="item4_alt" type="text" class="form-control" id="chiara_home_banner1_item4_alt">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item4_link">Link URL:</label>
+                      <input ng-model="item4_link" type="text" class="form-control" id="chiara_home_banner1_item4_link">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_home_banner1_item5_heading">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#chiara_home_banner1_accordion" href="#chiara_home_banner1_item5_collapse" aria-expanded="false" aria-controls="chiara_home_banner1_item5_collapse">
+                      Banner 5
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_home_banner1_item5_collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="chiara_home_banner1_item5_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item5_img_bg">Background Image URL:</label>
+                      <input ng-model="item5_img_bg" type="text" class="form-control" id="chiara_home_banner1_item5_img_bg" ng-init="item5_img_bg='https://cdn7.bigcommerce.com/s-g0pakqdzwl/product_images/uploaded_images/furniture-banner2.jpg?t=1534872900'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item5_img_fg">Front Image URL:</label>
+                      <input ng-model="item5_img_fg" type="text" class="form-control" id="chiara_home_banner1_item5_img_fg" ng-init="item5_img_fg='https://cdn7.bigcommerce.com/s-g0pakqdzwl/product_images/uploaded_images/furniture-banner2a.png?t=1534872900'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item5_alt">Image Alt:</label>
+                      <input ng-model="item5_alt" type="text" class="form-control" id="chiara_home_banner1_item5_alt">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner1_item5_link">Link URL:</label>
+                      <input ng-model="item5_link" type="text" class="form-control" id="chiara_home_banner1_item5_link">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div hljs include="'/samples/chiara_home_banner1.txt'" compile="true" id="chiara_home_banner1_code" class="highlight-code"></div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-clipboard-target="#chiara_home_banner1_code">Copy Code</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- modal #chiara_home_banner1_modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="chiara_home_banner2_modal" tabindex="-1" role="dialog" aria-labelledby="chiara_home_banner2_modal_label">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="chiara_home_banner2_modal_label">Code Generator: Homepage Fullwidth Banner</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="panel-group" id="chiara_home_banner2_accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_home_banner2_item1_heading">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#chiara_home_banner2_accordion" href="#chiara_home_banner2_item1_collapse" aria-expanded="true" aria-controls="chiara_home_banner2_item1_collapse">
+                      Banner
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_home_banner2_item1_collapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="chiara_home_banner2_item1_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_home_banner2_item1_img_bg">Background Image URL:</label>
+                      <input ng-model="item1_img_bg" type="text" class="form-control" id="chiara_home_banner2_item1_img_bg" ng-init="item1_img_bg='https://cdn7.bigcommerce.com/s-g0pakqdzwl/product_images/uploaded_images/furniture-banner6.jpg?t=1534874551'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner2_item1_img_fg">Front Image URL:</label>
+                      <input ng-model="item1_img_fg" type="text" class="form-control" id="chiara_home_banner2_item1_img_fg" ng-init="item1_img_fg='https://cdn7.bigcommerce.com/s-g0pakqdzwl/product_images/uploaded_images/furniture-banner6a.png?t=1534874552'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner2_item1_alt">Image Alt:</label>
+                      <input ng-model="item1_alt" type="text" class="form-control" id="chiara_home_banner2_item1_alt">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner2_item1_link">Link URL:</label>
+                      <input ng-model="item1_link" type="text" class="form-control" id="chiara_home_banner2_item1_link">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div hljs include="'/samples/chiara_home_banner2.txt'" compile="true" id="chiara_home_banner2_code" class="highlight-code"></div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-clipboard-target="#chiara_home_banner2_code">Copy Code</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- modal #chiara_home_banner2_modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="chiara_home_banner3_modal" tabindex="-1" role="dialog" aria-labelledby="chiara_home_banner3_modal_label">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="chiara_home_banner3_modal_label">Code Generator: Images Carousel</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="panel-group" id="chiara_home_banner3_accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_home_banner3_item1_heading">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#chiara_home_banner3_accordion" href="#chiara_home_banner3_item1_collapse" aria-expanded="true" aria-controls="chiara_home_banner3_item1_collapse">
+                      Image 1
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_home_banner3_item1_collapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="chiara_home_banner3_item1_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item1_img">Background Image URL:</label>
+                      <input ng-model="item1_img" type="text" class="form-control" id="chiara_home_banner3_item1_img" ng-init="item1_img='https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/brand1.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item1_alt">Image Alt:</label>
+                      <input ng-model="item1_alt" type="text" class="form-control" id="chiara_home_banner3_item1_alt"
+                      ng-init="item1_alt='Banner1'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item1_link">Link URL:</label>
+                      <input ng-model="item1_link" type="text" class="form-control" id="chiara_home_banner3_item1_link"
+                      ng-init="item1_link='#'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_home_banner3_item2_heading">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#chiara_home_banner3_accordion" href="#chiara_home_banner3_item2_collapse" aria-expanded="false" aria-controls="chiara_home_banner3_item2_collapse">
+                      Image 2
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_home_banner3_item2_collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="chiara_home_banner3_item2_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item2_img">Background Image URL:</label>
+                      <input ng-model="item2_img" type="text" class="form-control" id="chiara_home_banner3_item2_img" ng-init="item2_img='https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/brand2.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item2_alt">Image Alt:</label>
+                      <input ng-model="item2_alt" type="text" class="form-control" id="chiara_home_banner3_item2_alt"
+                      ng-init="item2_alt='Banner2'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item2_link">Link URL:</label>
+                      <input ng-model="item2_link" type="text" class="form-control" id="chiara_home_banner3_item2_link"
+                      ng-init="item2_link='#'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_home_banner3_item3_heading">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#chiara_home_banner3_accordion" href="#chiara_home_banner3_item3_collapse" aria-expanded="false" aria-controls="chiara_home_banner3_item3_collapse">
+                      Image 3
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_home_banner3_item3_collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="chiara_home_banner3_item3_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item3_img">Background Image URL:</label>
+                      <input ng-model="item3_img" type="text" class="form-control" id="chiara_home_banner3_item3_img" ng-init="item3_img='https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/brand3.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item3_alt">Image Alt:</label>
+                      <input ng-model="item3_alt" type="text" class="form-control" id="chiara_home_banner3_item3_alt"
+                      ng-init="item3_alt='Banner3'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item3_link">Link URL:</label>
+                      <input ng-model="item3_link" type="text" class="form-control" id="chiara_home_banner3_item3_link"
+                      ng-init="item3_link='#'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_home_banner3_item4_heading">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#chiara_home_banner3_accordion" href="#chiara_home_banner3_item4_collapse" aria-expanded="false" aria-controls="chiara_home_banner3_item4_collapse">
+                      Image 4
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_home_banner3_item4_collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="chiara_home_banner3_item4_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item4_img">Background Image URL:</label>
+                      <input ng-model="item4_img" type="text" class="form-control" id="chiara_home_banner3_item4_img" ng-init="item4_img='https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/brand4.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item4_alt">Image Alt:</label>
+                      <input ng-model="item4_alt" type="text" class="form-control" id="chiara_home_banner3_item4_alt"
+                      ng-init="item4_alt='Banner4'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item4_link">Link URL:</label>
+                      <input ng-model="item4_link" type="text" class="form-control" id="chiara_home_banner3_item4_link"
+                      ng-init="item4_link='#'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_home_banner3_item5_heading">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#chiara_home_banner3_accordion" href="#chiara_home_banner3_item5_collapse" aria-expanded="false" aria-controls="chiara_home_banner3_item5_collapse">
+                      Image 5
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_home_banner3_item5_collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="chiara_home_banner3_item5_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item5_img">Background Image URL:</label>
+                      <input ng-model="item5_img" type="text" class="form-control" id="chiara_home_banner3_item5_img" ng-init="item5_img='https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/brand5.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item5_alt">Image Alt:</label>
+                      <input ng-model="item5_alt" type="text" class="form-control" id="chiara_home_banner3_item5_alt"
+                      ng-init="item5_alt='Banner5'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item5_link">Link URL:</label>
+                      <input ng-model="item5_link" type="text" class="form-control" id="chiara_home_banner3_item5_link"
+                      ng-init="item5_link='#'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_home_banner3_item6_heading">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#chiara_home_banner3_accordion" href="#chiara_home_banner3_item6_collapse" aria-expanded="false" aria-controls="chiara_home_banner3_item6_collapse">
+                      Image 6
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_home_banner3_item6_collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="chiara_home_banner3_item6_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item6_img">Background Image URL:</label>
+                      <input ng-model="item6_img" type="text" class="form-control" id="chiara_home_banner3_item6_img" ng-init="item6_img='https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/brand6.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item6_alt">Image Alt:</label>
+                      <input ng-model="item6_alt" type="text" class="form-control" id="chiara_home_banner3_item6_alt"
+                      ng-init="item6_alt='Banner6'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item6_link">Link URL:</label>
+                      <input ng-model="item6_link" type="text" class="form-control" id="chiara_home_banner3_item6_link"
+                      ng-init="item6_link='#'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_home_banner3_item7_heading">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#chiara_home_banner3_accordion" href="#chiara_home_banner3_item7_collapse" aria-expanded="false" aria-controls="chiara_home_banner3_item7_collapse">
+                      Image 7
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_home_banner3_item7_collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="chiara_home_banner3_item7_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item7_img">Background Image URL:</label>
+                      <input ng-model="item7_img" type="text" class="form-control" id="chiara_home_banner3_item7_img" ng-init="item7_img='https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/brand7.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item7_alt">Image Alt:</label>
+                      <input ng-model="item7_alt" type="text" class="form-control" id="chiara_home_banner3_item7_alt"
+                      ng-init="item7_alt='Banner7'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item7_link">Link URL:</label>
+                      <input ng-model="item7_link" type="text" class="form-control" id="chiara_home_banner3_item7_link"
+                      ng-init="item7_link='#'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_home_banner3_item8_heading">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#chiara_home_banner3_accordion" href="#chiara_home_banner3_item8_collapse" aria-expanded="false" aria-controls="chiara_home_banner3_item8_collapse">
+                      Image 8
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_home_banner3_item8_collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="chiara_home_banner3_item8_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item8_img">Background Image URL:</label>
+                      <input ng-model="item8_img" type="text" class="form-control" id="chiara_home_banner3_item8_img" ng-init="item8_img='https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/brand8.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item8_alt">Image Alt:</label>
+                      <input ng-model="item8_alt" type="text" class="form-control" id="chiara_home_banner3_item8_alt"
+                      ng-init="item8_alt='Banner8'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_home_banner3_item8_link">Link URL:</label>
+                      <input ng-model="item8_link" type="text" class="form-control" id="chiara_home_banner3_item8_link"
+                      ng-init="item8_link='#'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div hljs include="'/samples/chiara_home_banner3.txt'" compile="true" id="chiara_home_banner3_code" class="highlight-code"></div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-clipboard-target="#chiara_home_banner3_code">Copy Code</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- modal #chiara_home_banner3_modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="chiara_sidebar_category_banner1_modal" tabindex="-1" role="dialog" aria-labelledby="chiara_sidebar_category_banner1_modal_label">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="chiara_sidebar_category_banner1_modal_label">Code Generator: Sidebar Category Banner 1</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="panel-group" id="chiara_sidebar_category_banner1_accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_sidebar_category_banner1_item1_heading">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#chiara_sidebar_category_banner1_accordion" href="#chiara_sidebar_category_banner1_item1_collapse" aria-expanded="true" aria-controls="chiara_sidebar_category_banner1_item1_collapse">
+                      Image
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_sidebar_category_banner1_item1_collapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="chiara_sidebar_category_banner1_item1_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_sidebar_category_banner1_item1_img">Image URL:</label>
+                      <input ng-model="item1_img" type="text" class="form-control" id="chiara_sidebar_category_banner1_item1_img" ng-init="item1_img='https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/banner-sidebar.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_category_banner1_item1_alt">Image Alt:</label>
+                      <input ng-model="item1_alt" type="text" class="form-control" id="chiara_sidebar_category_banner1_item1_alt"
+                      ng-init="item1_title='beauty'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_category_banner1_item1_link">Title:</label>
+                      <input ng-model="item1_title" type="text" class="form-control" id="chiara_sidebar_category_banner1_item1_title"
+                      ng-init="item1_title='beauty'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_category_banner1_item1_link">Subtitle:</label>
+                      <input ng-model="item1_subtitle" type="text" class="form-control" id="chiara_sidebar_category_banner1_item1_subtitle"
+                      ng-init="item1_subtitle='from &pound;29.99'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_category_banner1_item1_link">Link URL:</label>
+                      <input ng-model="item1_action_link" type="text" class="form-control" id="chiara_sidebar_category_banner1_item1_link"
+                      ng-init="item1_action_link='#'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_category_banner1_item1_link">Link Text:</label>
+                      <input ng-model="item1_action_text" type="text" class="form-control" id="chiara_sidebar_category_banner1_item1_link"
+                      ng-init="item1_action_text='shop now'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div hljs include="'/samples/chiara_sidebar_category_banner1.txt'" compile="true" id="chiara_sidebar_category_banner1_code" class="highlight-code"></div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-clipboard-target="#chiara_sidebar_category_banner1_code">Copy Code</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- modal #chiara_sidebar_category_banner1_modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="chiara_sidebar_category_banner2_modal" tabindex="-1" role="dialog" aria-labelledby="chiara_sidebar_category_banner2_modal_label">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="chiara_sidebar_category_banner2_modal_label">Code Generator: Sidebar Category Banner 2</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="panel-group" id="chiara_sidebar_category_banner2_accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_sidebar_category_banner2_item1_heading">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#chiara_sidebar_category_banner2_accordion" href="#chiara_sidebar_category_banner2_item1_collapse" aria-expanded="true" aria-controls="chiara_sidebar_category_banner2_item1_collapse">
+                      Image
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_sidebar_category_banner2_item1_collapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="chiara_sidebar_category_banner2_item1_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_sidebar_category_banner1_item2_img">Image URL:</label>
+                      <input ng-model="item2_img" type="text" class="form-control" id="chiara_sidebar_category_banner2_item2_img" ng-init="item2_img='https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/banner-sidebar.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_category_banner2_item2_alt">Image Alt:</label>
+                      <input ng-model="item2_alt" type="text" class="form-control" id="chiara_sidebar_category_banner2_item2_alt"
+                      ng-init="item2_alt='beauty'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_category_banner2_item2_link">Title:</label>
+                      <input ng-model="item2_title" type="text" class="form-control" id="chiara_sidebar_category_banner2_item2_title"
+                      ng-init="item2_title='beauty'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_category_banner1_item1_link">Subtitle:</label>
+                      <input ng-model="item2_subtitle" type="text" class="form-control" id="chiara_sidebar_category_banner2_item2_subtitle"
+                      ng-init="item2_subtitle='from &pound;29.99'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_category_banner2_item2_link">Link URL:</label>
+                      <input ng-model="item2_action_link" type="text" class="form-control" id="chiara_sidebar_category_banner2_item2_link"
+                      ng-init="item2_action_link='#'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_category_banner2_item2_link">Link Text:</label>
+                      <input ng-model="item2_action_text" type="text" class="form-control" id="chiara_sidebar_category_banner2_item2_link"
+                      ng-init="item2_action_text='shop now'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div hljs include="'/samples/chiara_sidebar_category_banner2.txt'" compile="true" id="chiara_sidebar_category_banner2_code" class="highlight-code"></div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-clipboard-target="#chiara_sidebar_category_banner2_code">Copy Code</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- modal #chiara_sidebar_category_banner2_modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="chiara_sidebar_brand_banner1_modal" tabindex="-1" role="dialog" aria-labelledby="chiara_sidebar_brand_banner1_modal_label">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="chiara_sidebar_brand_banner1_modal_label">Code Generator: Sidebar Brand Banner 1</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="panel-group" id="chiara_sidebar_brand_banner1_accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_sidebar_brand_banner1_item1_heading">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#chiara_sidebar_brand_banner1_accordion" href="#chiara_sidebar_brand_banner1_item1_collapse" aria-expanded="true" aria-controls="chiara_sidebar_brand_banner1_item1_collapse">
+                      Image
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_sidebar_brand_banner1_item1_collapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="chiara_sidebar_brand_banner1_item1_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_sidebar_brand_banner1_item1_img">Image URL:</label>
+                      <input ng-model="item1_img" type="text" class="form-control" id="chiara_sidebar_brand_banner1_item1_img" ng-init="item1_img='https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/banner-sidebar.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_brand_banner1_item1_alt">Image Alt:</label>
+                      <input ng-model="item1_alt" type="text" class="form-control" id="chiara_sidebar_brand_banner1_item1_alt"
+                      ng-init="item1_title='beauty'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_brand_banner1_item1_link">Title:</label>
+                      <input ng-model="item1_title" type="text" class="form-control" id="chiara_sidebar_brand_banner1_item1_title"
+                      ng-init="item1_title='beauty'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_brand_banner1_item1_link">Subtitle:</label>
+                      <input ng-model="item1_subtitle" type="text" class="form-control" id="chiara_sidebar_brand_banner1_item1_subtitle"
+                      ng-init="item1_subtitle='from &pound;29.99'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_brand_banner1_item1_link">Link URL:</label>
+                      <input ng-model="item1_action_link" type="text" class="form-control" id="chiara_sidebar_brand_banner1_item1_link"
+                      ng-init="item1_action_link='#'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_brand_banner1_item1_link">Link Text:</label>
+                      <input ng-model="item1_action_text" type="text" class="form-control" id="chiara_sidebar_brand_banner1_item1_link"
+                      ng-init="item1_action_text='shop now'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div hljs include="'/samples/chiara_sidebar_brand_banner1.txt'" compile="true" id="chiara_sidebar_brand_banner1_code" class="highlight-code"></div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-clipboard-target="#chiara_sidebar_brand_banner1_code">Copy Code</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- modal #chiara_sidebar_brand_banner1_modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="chiara_sidebar_brand_banner2_modal" tabindex="-1" role="dialog" aria-labelledby="chiara_sidebar_brand_banner2_modal_label">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="chiara_sidebar_brand_banner2_modal_label">Code Generator: Sidebar Brand Banner 2</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="panel-group" id="chiara_sidebar_brand_banner2_accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="chiara_sidebar_brand_banner2_item1_heading">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#chiara_sidebar_brand_banner2_accordion" href="#chiara_sidebar_brand_banner2_item1_collapse" aria-expanded="true" aria-controls="chiara_sidebar_brand_banner2_item1_collapse">
+                      Image
+                    </a>
+                  </h4>
+                </div>
+                <div id="chiara_sidebar_brand_banner2_item1_collapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="chiara_sidebar_brand_banner2_item1_heading">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="chiara_sidebar_brand_banner1_item2_img">Image URL:</label>
+                      <input ng-model="item2_img" type="text" class="form-control" id="chiara_sidebar_brand_banner2_item2_img" ng-init="item2_img='https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/banner-sidebar.jpg'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_brand_banner2_item2_alt">Image Alt:</label>
+                      <input ng-model="item2_alt" type="text" class="form-control" id="chiara_sidebar_brand_banner2_item2_alt"
+                      ng-init="item2_alt='beauty'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_brand_banner2_item2_link">Title:</label>
+                      <input ng-model="item2_title" type="text" class="form-control" id="chiara_sidebar_brand_banner2_item2_title"
+                      ng-init="item2_title='beauty'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_brand_banner1_item1_link">Subtitle:</label>
+                      <input ng-model="item2_subtitle" type="text" class="form-control" id="chiara_sidebar_brand_banner2_item2_subtitle"
+                      ng-init="item2_subtitle='from &pound;29.99'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_brand_banner2_item2_link">Link URL:</label>
+                      <input ng-model="item2_action_link" type="text" class="form-control" id="chiara_sidebar_brand_banner2_item2_link"
+                      ng-init="item2_action_link='#'">
+                    </div>
+                    <div class="form-group">
+                      <label for="chiara_sidebar_brand_banner2_item2_link">Link Text:</label>
+                      <input ng-model="item2_action_text" type="text" class="form-control" id="chiara_sidebar_brand_banner2_item2_link"
+                      ng-init="item2_action_text='shop now'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div hljs include="'/samples/chiara_sidebar_brand_banner2.txt'" compile="true" id="chiara_sidebar_brand_banner2_code" class="highlight-code"></div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-clipboard-target="#chiara_sidebar_brand_banner2_code">Copy Code</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- modal #chiara_sidebar_brand_banner2_modal -->
+</div>
+
+<h1 id="customization">Customization<a class="headerlink" href="#customization" title="Permanent link">&para;</a></h1>
+<h2 id="read-first-customization-guideline">READ FIRST - Customization Guideline<a class="headerlink" href="#read-first-customization-guideline" title="Permanent link">&para;</a></h2>
+<p><strong>Contact for Support:</strong> <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#112;&#97;&#112;&#97;&#116;&#104;&#101;&#109;&#101;&#115;&#46;&#99;&#111;&#109;">&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#112;&#97;&#112;&#97;&#116;&#104;&#101;&#109;&#101;&#115;&#46;&#99;&#111;&#109;</a></p>
+<h3 id="how-to-add-your-own-css-scss">How to add your own CSS / SCSS:<a class="headerlink" href="#how-to-add-your-own-css-scss" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Option 1:</strong> Edit file <code>assets/scss/_chiara-custom.scss</code></li>
+<li><strong>Option 2:</strong> Add custom CSS  in <code>&lt;style&gt;...&lt;/style&gt;</code> into <strong>Storefront</strong> &gt; <strong>Footer Scripts</strong>.</li>
+</ul>
+<h3 id="how-to-add-your-own-javascript">How to add your own Javascript:<a class="headerlink" href="#how-to-add-your-own-javascript" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Option 1:</strong> Add custom JS in <code>&lt;script&gt;...&lt;/script&gt;</code> into <strong>Storefront</strong> &gt; <strong>Footer Scripts</strong>.</li>
+<li><strong>Option 2:</strong> Add custom JS into <strong>Storefront</strong> &gt; <strong>Scripts Manager</strong>.</li>
+</ul>
+<h3 id="edit-html">Edit HTML:<a class="headerlink" href="#edit-html" title="Permanent link">&para;</a></h3>
+<p>For sections with the prefix "angels", edit the file <code>templates/angels-custom.html</code>.
+For other sections, edit the file <code>templates/chiara-custom.html</code>.</p>
+<hr />
+<p><em><strong>WARNING: EDIT OTHER FILES WILL PREVENT UPGRADING THE THEME IN THE FUTURE!</strong></em></p>
+<h2 id="headers">Headers<a class="headerlink" href="#headers" title="Permanent link">&para;</a></h2>
+<p><img alt="Headers" src="img/headers.png" /></p>
+<p>Theme supports 3 header with logo position <strong>left</strong>, <strong>center</strong> or <strong>right</strong>. It is configured in <strong>Theme Editor</strong> &gt; <strong>Header</strong> &gt; <strong>Logo position</strong>.</p>
+<p><img alt="Headers" src="img/headers-2.png" /></p>
+<p>You can configure Header style, logo size, colors, fonts in <strong>Theme Editor</strong> &gt; <strong>Header</strong>.</p>
+<h3 id="mega-menu-vs-standard-menu">Mega Menu vs. Standard Menu<a class="headerlink" href="#mega-menu-vs-standard-menu" title="Permanent link">&para;</a></h3>
+<p><img alt="Menus" src="img/menus.png" /></p>
+<p>Theme supports Mega Menu or Standard Menu. You can configure in <strong>Theme Editor</strong> &gt; <strong>Header</strong> &gt; <strong>Main Navigation</strong> &gt; <strong>Navigation design</strong>.</p>
+<p><img alt="Navigation design" src="img/menus-2.png" /></p>
+<p>The menu is automatically popuplated from your product categories and web pages (in <strong>Storefront</strong> &gt; <strong>Web Pages</strong>). </p>
+<p>You can hide all web pages on this menu by tick on the option <strong>Hide web pages in main navigation</strong> in <strong>Theme Editor</strong> &gt; <strong>Header</strong>.</p>
+<h3 id="top-banner">Top Banner<a class="headerlink" href="#top-banner" title="Permanent link">&para;</a></h3>
+<p><img alt="top banner" src="img/top-banner.png" /></p>
+<p>You can edit the default bigcommerce top banner on the homepage, category pages, product pages in <strong>Marketing</strong> &gt; <strong>Banner Manager</strong>.</p>
+<h2 id="footers">Footers<a class="headerlink" href="#footers" title="Permanent link">&para;</a></h2>
+<p><img alt="Footers" src="img/footers.png" /></p>
+<p>Configure the footer in <strong>Theme Editor</strong> &gt; <strong>Footer</strong> section. </p>
+<ul>
+<li><strong>You can change colors.</strong></li>
+<li><strong>Show/hide web page links, categories, brands.</strong></li>
+<li><strong>Add custom links in maximum 4 columns.</strong></li>
+<li><strong>Newsletter form support top or right position of the footer.</strong></li>
+<li><strong>Change colors of the copyright section.</strong></li>
+<li><strong>Show/hide copyright links.</strong></li>
+<li><strong>Show/hide payment icons.</strong></li>
+</ul>
+<h2 id="homepage-main-carousel">Homepage Main Carousel<a class="headerlink" href="#homepage-main-carousel" title="Permanent link">&para;</a></h2>
+<p><img alt="Main carousel" src="img/main-carousel.png" /></p>
+<p>Main carousel displays on the home page can be input in <strong>Storefront</strong> &gt; <strong>Home Page Carousel</strong>.</p>
+<p>You can configure carousel settings in <strong>Theme Editor</strong> &gt; <strong>Home Page</strong> &gt; <strong>Carousel</strong> section. Here you can turn on/off this carousel, configure colors, content position and so on.</p>
+<h2 id="homepage-sections-manager">Homepage Sections Manager<a class="headerlink" href="#homepage-sections-manager" title="Permanent link">&para;</a></h2>
+<p>You can select the sections displayed on the homepage (maximum 10 sections) in <strong>Theme Editor</strong> &gt; <strong>Homepage</strong> &gt; <strong>Sections</strong>.</p>
+<p><img alt="Homepage Sections Manager" src="img/homepage-sections-manager.png" /></p>
+<p><strong><em> List of sections name: </em></strong></p>
+<p>1/ Angels sections</p>
+<ul>
+<li><strong>angels-lingerie-featured-collections</strong></li>
+<li><strong>angels-lingerie-3infoicons</strong></li>
+<li><strong>angels-lingerie-dealofday</strong></li>
+<li><strong>angels-lingerie-trending-products</strong></li>
+<li><strong>angels-shoes-simple-text</strong></li>
+<li><strong>angels-shoes-4infoicons</strong></li>
+<li><strong>angels-shoes-fullwidth-banner</strong></li>
+<li><strong>angels-shoes-testimonials</strong></li>
+<li><strong>angels-cosmetic-welcome</strong></li>
+<li><strong>angels-cosmetic-bigsales</strong></li>
+<li><strong>angels-cosmetic-fullwidth-banner</strong></li>
+<li><strong>angels-cosmetic-products-tabs</strong></li>
+<li><strong>angels-cosmetic-column-banners</strong></li>
+<li><strong>angels-cosmetic-blog</strong></li>
+<li><strong>angels-furniture-featured-collections</strong></li>
+<li><strong>angels-furniture-fullwidth-banner</strong></li>
+<li><strong>angels-furniture-products-tabs</strong></li>
+<li><strong>angels-furniture-blog</strong></li>
+<li><strong>angels-products-by-category1</strong></li>
+<li><strong>angels-products-by-category2</strong></li>
+<li><strong>angels-products-by-category3</strong></li>
+<li><strong>angels-products-by-category4</strong></li>
+<li><strong>angels-products-by-category5</strong></li>
+<li><strong>angels-products-by-category6</strong></li>
+</ul>
+<p>2/ Orther sections:</p>
+<ul>
+<li><strong>new-products</strong></li>
+<li><strong>top-products</strong></li>
+<li><strong>featured-products</strong></li>
+<li><strong>Instagram</strong></li>
+<li><strong>store-offers</strong></li>
+<li><strong>lookbook-banner</strong></li>
+<li><strong>about-banner</strong></li>
+<li><strong>brands-carousel</strong></li>
+<li><strong>recent-blog</strong></li>
+</ul>
+<h2 id="custom-homepage-lingerie">CUSTOM HOMEPAGE LINGERIE:<a class="headerlink" href="#custom-homepage-lingerie" title="Permanent link">&para;</a></h2>
+<h3 id="default-sections">Default sections:<a class="headerlink" href="#default-sections" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>angels-lingerie-featured-collections</strong></li>
+<li><strong>angels-lingerie-3infoicons</strong></li>
+<li><strong>angels-lingerie-dealofday</strong></li>
+<li><strong>angels-lingerie-trending-products</strong></li>
+</ul>
+<h2 id="-section-featured-collections">- Section Featured Collections<a class="headerlink" href="#-section-featured-collections" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-1-section-1.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-lingerie-featured-collections&quot;}}
+&lt;div class=&quot;chiara-section angels-section--lingerieFeaturedCollections&quot;&gt;
+    &lt;div class=&quot;angels-lingerieFeaturedCollections&quot;&gt;
+        &lt;h2 class=&quot;page-heading&quot;&gt;Featured Collections&lt;/h2&gt;
+        &lt;div class=&quot;angels-lingerieFeaturedCollections-list&quot;&gt;
+            &lt;div class=&quot;angels-lingerieFeaturedCollections-item&quot;&gt;
+                &lt;div class=&quot;angels-lingerieFeaturedCollections-item-inner&quot;&gt;
+                    &lt;div class=&quot;angels-lingerieFeaturedCollections-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-lingerieFeaturedCollections-img lazyload&quot; data-movement=&quot;-20&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-lingerie-banner01.jpg&quot; width=&quot;570&quot; height=&quot;510&quot; alt=&quot;570x510&quot; /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-lingerieFeaturedCollections-content&quot; data-movement=&quot;10&quot;&gt;
+                        &lt;p class=&quot;angels-lingerieFeaturedCollections-title&quot;&gt;Bikinis &amp;amp; Briefs&lt;br/&gt;Collections&lt;/p&gt;
+                        &lt;p class=&quot;angels-lingerieFeaturedCollections-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-lingerieFeaturedCollections-item&quot;&gt;
+                &lt;div class=&quot;angels-lingerieFeaturedCollections-item-inner&quot;&gt;
+                    &lt;div class=&quot;angels-lingerieFeaturedCollections-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-lingerieFeaturedCollections-img lazyload&quot; data-movement=&quot;-30&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-lingerie-banner02.jpg&quot; width=&quot;470&quot; height=&quot;240&quot; alt=&quot;470x240&quot; /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-lingerieFeaturedCollections-content&quot; data-movement=&quot;15&quot;&gt;
+                        &lt;p class=&quot;angels-lingerieFeaturedCollections-title&quot;&gt;Teddies&lt;br/&gt;&amp;amp; Bodysuits&lt;/p&gt;
+                        &lt;p class=&quot;angels-lingerieFeaturedCollections-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-lingerieFeaturedCollections-item&quot;&gt;
+                &lt;div class=&quot;angels-lingerieFeaturedCollections-item-inner&quot;&gt;
+                    &lt;div class=&quot;angels-lingerieFeaturedCollections-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-lingerieFeaturedCollections-img lazyload&quot; data-movement=&quot;-30&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-lingerie-banner03.jpg&quot; width=&quot;320&quot; height=&quot;270&quot; alt=&quot;320x270&quot; /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-lingerieFeaturedCollections-content&quot; data-movement=&quot;15&quot;&gt;
+                        &lt;p class=&quot;angels-lingerieFeaturedCollections-title&quot;&gt;Corsets &amp;amp; Bustiers&lt;/p&gt;
+                        &lt;p class=&quot;angels-lingerieFeaturedCollections-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-lingerieFeaturedCollections-item&quot;&gt;
+                &lt;div class=&quot;angels-lingerieFeaturedCollections-item-inner&quot;&gt;
+                    &lt;div class=&quot;angels-lingerieFeaturedCollections-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-lingerieFeaturedCollections-img lazyload&quot; data-movement=&quot;-60&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-lingerie-banner04.jpg&quot; width=&quot;270&quot; height=&quot;380&quot; alt=&quot;270x380&quot; /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-lingerieFeaturedCollections-content&quot; data-movement=&quot;30&quot;&gt;
+                        &lt;p class=&quot;angels-lingerieFeaturedCollections-title&quot;&gt;Thongs Beach&lt;/p&gt;
+                        &lt;p class=&quot;angels-lingerieFeaturedCollections-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<!-- Or use button below to generate HTML code with your custom content: -->
+
+<!-- Button trigger modal -->
+
+<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#lightbulbs_banner_1">
+  Launch Banner Code Generator
+</button> -->
+
+<h2 id="-section-info-icons-3-icons">- Section Info Icons (3 icons)<a class="headerlink" href="#-section-info-icons-3-icons" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-1-section-2.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-lingerie-3infoicons&quot;}}
+&lt;div class=&quot;chiara-section angels-section--lingerie3infoicons&quot;&gt;
+    &lt;div class=&quot;angels-lingerie3infoicons&quot;&gt;
+        &lt;div class=&quot;angels-lingerie3infoicons-list&quot;&gt;
+            &lt;div class=&quot;angels-lingerie3infoicons-item&quot;&gt;
+                &lt;div class=&quot;angels-lingerie3infoicons-item-inner&quot;&gt;
+                    &lt;div class=&quot;angels-lingerie3infoicons-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;
+                            &lt;svg width=&quot;32px&quot; height=&quot;32px&quot; class=&quot;angels-lingerie3infoicons-img&quot;&gt;&lt;use xlink:href=&quot;#icon-ionicons-paper-plane&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                            &lt;!-- &lt;img class=&quot;angels-lingerie3infoicons-img&quot; src=&quot;//placehold.it/35x35&quot; alt=&quot;35x35&quot; /&gt; --&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-lingerie3infoicons-content&quot;&gt;
+                        &lt;p class=&quot;angels-lingerie3infoicons-title&quot;&gt;Free Shipping&lt;/p&gt;
+                        &lt;p class=&quot;angels-lingerie3infoicons-desc&quot;&gt;ALL ORDERS OVER $150&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-lingerie3infoicons-item&quot;&gt;
+                &lt;div class=&quot;angels-lingerie3infoicons-item-inner&quot;&gt;
+                    &lt;div class=&quot;angels-lingerie3infoicons-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;
+                            &lt;svg width=&quot;32px&quot; height=&quot;32px&quot; class=&quot;angels-lingerie3infoicons-img&quot;&gt;&lt;use xlink:href=&quot;#icon-ionicons-call&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                            &lt;!-- &lt;img class=&quot;angels-lingerie3infoicons-img&quot; src=&quot;//placehold.it/35x35&quot; alt=&quot;35x35&quot; /&gt; --&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-lingerie3infoicons-content&quot;&gt;
+                        &lt;p class=&quot;angels-lingerie3infoicons-title&quot;&gt;Customer Support&lt;/p&gt;
+                        &lt;p class=&quot;angels-lingerie3infoicons-desc&quot;&gt;SUPPORT 24/7&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-lingerie3infoicons-item&quot;&gt;
+                &lt;div class=&quot;angels-lingerie3infoicons-item-inner&quot;&gt;
+                    &lt;div class=&quot;angels-lingerie3infoicons-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;
+                            &lt;svg width=&quot;32px&quot; height=&quot;32px&quot; class=&quot;angels-lingerie3infoicons-img&quot;&gt;&lt;use xlink:href=&quot;#icon-ionicons-card&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                            &lt;!-- &lt;img class=&quot;angels-lingerie3infoicons-img&quot; src=&quot;//placehold.it/35x35&quot; alt=&quot;35x35&quot; /&gt; --&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-lingerie3infoicons-content&quot;&gt;
+                        &lt;p class=&quot;angels-lingerie3infoicons-title&quot;&gt;Secure Payment&lt;/p&gt;
+                        &lt;p class=&quot;angels-lingerie3infoicons-desc&quot;&gt;100% SECURE PAYMENT&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="-section-deal-of-day">- Section Deal Of Day<a class="headerlink" href="#-section-deal-of-day" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-1-section-3.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-lingerie-dealofday&quot;}}
+&lt;div class=&quot;chiara-section angels-section--lingerieDealofday&quot;&gt;
+    &lt;div class=&quot;angels-lingerieDealofday&quot;&gt;
+        &lt;div class=&quot;angels-lingerieDealofday-inner&quot;&gt;
+            &lt;div class=&quot;angels-lingerieDealofday-img-container&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-lingerieDealofday-img&quot; src=&quot;//placehold.it/1920x820&quot; alt=&quot;1920x820&quot; /&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-lingerieDealofday-content&quot;&gt;
+                &lt;p class=&quot;angels-lingerieDealofday-subtitle&quot;&gt;#MYANGELS&lt;/p&gt;
+                &lt;p class=&quot;angels-lingerieDealofday-title&quot;&gt;Deals of the day&lt;/p&gt;
+                &lt;p class=&quot;angels-lingerieDealofday-countdown&quot; data-countdown=&quot;2020-12-12T00:00:00Z&quot;&gt;&lt;span class=&quot;item&quot;&gt;&lt;span class=&quot;day&quot; data-countdown-day=&quot;&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;label&quot;&gt;days&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;item seperator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;item&quot;&gt;&lt;span class=&quot;hour&quot; data-countdown-hour=&quot;&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;label&quot;&gt;hours&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;item seperator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;item&quot;&gt;&lt;span class=&quot;min&quot; data-countdown-min=&quot;&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;label&quot;&gt;mins&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;item seperator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;item&quot;&gt;&lt;span class=&quot;sec&quot; data-countdown-sec=&quot;&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;label&quot;&gt;secs&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                &lt;p class=&quot;angels-lingerieDealofday-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="-section-trending-products">- Section Trending Products<a class="headerlink" href="#-section-trending-products" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-1-section-4.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-lingerie-trending-products&quot;}}
+&lt;div class=&quot;chiara-section angels-section--lingerieTrendingProducts&quot;&gt;
+    &lt;div class=&quot;angels-lingerieTrendingProducts&quot;&gt;
+        &lt;h2 class=&quot;page-heading&quot;&gt;Trending Products&lt;/h2&gt;
+        &lt;p class=&quot;angels-lingerieTrendingProducts-browseAll&quot;&gt;&lt;a href=&quot;&quot;#&gt;Browse all products&lt;/a&gt;&lt;/p&gt;
+        &lt;ul class=&quot;angels-lingerieTrendingProducts-tabs&quot;&gt;
+            &lt;li class=&quot;angels-lingerieTrendingProducts-tab&quot;&gt;&lt;a href=&quot;#&quot;&gt;All&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;angels-lingerieTrendingProducts-tab&quot;&gt;&lt;a href=&quot;#&quot;&gt;Slips&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;angels-lingerieTrendingProducts-tab&quot;&gt;&lt;a href=&quot;#&quot;&gt;Babydolls&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;angels-lingerieTrendingProducts-tab&quot;&gt;&lt;a href=&quot;#&quot;&gt;Kimonos&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;angels-lingerieTrendingProducts-tab&quot;&gt;&lt;a href=&quot;#&quot;&gt;Bras&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        {{&gt; components/chiara/products/grid products=products.new}}
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="custom-homepage-shoes">CUSTOM HOMEPAGE SHOES:<a class="headerlink" href="#custom-homepage-shoes" title="Permanent link">&para;</a></h2>
+<h3 id="default-sections_1">Default sections:<a class="headerlink" href="#default-sections_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>angels-shoes-simple-text</strong></li>
+<li><strong>angels-shoes-4infoicons</strong></li>
+<li><strong>angels-shoes-fullwidth-banner</strong></li>
+<li><strong>angels-products-by-category1</strong></li>
+<li><strong>angels-shoes-testimonials</strong></li>
+<li><strong>angels-products-by-category2</strong></li>
+</ul>
+<h2 id="-section-simple-text">- Section Simple Text<a class="headerlink" href="#-section-simple-text" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-2-section-1.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-shoes-simple-text&quot;}}
+&lt;div class=&quot;chiara-section angels-section--shoesSimpleText&quot;&gt;
+    &lt;div class=&quot;angels-shoesSimpleText wow fadeIn&quot;&gt;
+        &lt;div class=&quot;angels-shoesSimpleText-inner&quot;&gt;
+            &lt;div class=&quot;angels-shoesSimpleText-img-container&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-shoesSimpleText-img lazyload tm-inview&quot; data-movement=&quot;-10&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-shoes-simple-text-bg.jpg&quot; width=&quot;227&quot; height=&quot;257&quot; alt=&quot;227x257&quot; /&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-shoesSimpleText-content&quot;&gt;
+                &lt;p class=&quot;angels-shoesSimpleText-title&quot;&gt;Simple. Different. Like you.&lt;/p&gt;
+                &lt;p class=&quot;angels-shoesSimpleText-desc&quot;&gt;Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis faucibus mollis interdum. &lt;/p&gt;
+                &lt;p class=&quot;angels-shoesSimpleText-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;learn more.&lt;/a&gt;&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="-section-info-icons-4-icons">- Section Info Icons (4 icons)<a class="headerlink" href="#-section-info-icons-4-icons" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-2-section-2.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-shoes-4infoicons&quot;}}
+&lt;div class=&quot;chiara-section angels-section--shoes4infoicons&quot;&gt;
+    &lt;div class=&quot;angels-shoes4infoicons tm-inview&quot; data-movement=&quot;-10&quot;&gt;
+        &lt;div class=&quot;angels-shoes4infoicons-list&quot;&gt;
+            &lt;div class=&quot;angels-shoes4infoicons-item wow fadeIn&quot; data-wow-delay=&quot;0&quot;&gt;
+                &lt;div class=&quot;angels-shoes4infoicons-item-inner&quot;&gt;
+                    &lt;div class=&quot;angels-shoes4infoicons-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;
+                            &lt;svg width=&quot;32px&quot; height=&quot;32px&quot; class=&quot;angels-shoes4infoicons-img&quot;&gt;&lt;use xlink:href=&quot;#icon-ionicons-globe&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                            &lt;!-- &lt;img class=&quot;angels-shoes4infoicons-img&quot; src=&quot;//placehold.it/35x35&quot; alt=&quot;35x35&quot; /&gt; --&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-shoes4infoicons-content&quot;&gt;
+                        &lt;p class=&quot;angels-shoes4infoicons-title&quot;&gt;Free Worldwide Shipping&lt;/p&gt;
+                        &lt;p class=&quot;angels-shoes4infoicons-desc&quot;&gt;On all orders over $75.00&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-shoes4infoicons-item wow fadeIn&quot; data-wow-delay=&quot;200ms&quot;&gt;
+                &lt;div class=&quot;angels-shoes4infoicons-item-inner&quot;&gt;
+                    &lt;div class=&quot;angels-shoes4infoicons-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;
+                            &lt;svg width=&quot;32px&quot; height=&quot;32px&quot; class=&quot;angels-shoes4infoicons-img&quot;&gt;&lt;use xlink:href=&quot;#icon-ionicons-sync&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                            &lt;!-- &lt;img class=&quot;angels-shoes4infoicons-img&quot; src=&quot;//placehold.it/35x35&quot; alt=&quot;35x35&quot; /&gt; --&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-shoes4infoicons-content&quot;&gt;
+                        &lt;p class=&quot;angels-shoes4infoicons-title&quot;&gt;Money Back&lt;/p&gt;
+                        &lt;p class=&quot;angels-shoes4infoicons-desc&quot;&gt;30 days money back&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-shoes4infoicons-item wow fadeIn&quot; data-wow-delay=&quot;400ms&quot;&gt;
+                &lt;div class=&quot;angels-shoes4infoicons-item-inner&quot;&gt;
+                    &lt;div class=&quot;angels-shoes4infoicons-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;
+                            &lt;svg width=&quot;32px&quot; height=&quot;32px&quot; class=&quot;angels-shoes4infoicons-img&quot;&gt;&lt;use xlink:href=&quot;#icon-ionicons-call&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                            &lt;!-- &lt;img class=&quot;angels-shoes4infoicons-img&quot; src=&quot;//placehold.it/35x35&quot; alt=&quot;35x35&quot; /&gt; --&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-shoes4infoicons-content&quot;&gt;
+                        &lt;p class=&quot;angels-shoes4infoicons-title&quot;&gt;Friendly Support&lt;/p&gt;
+                        &lt;p class=&quot;angels-shoes4infoicons-desc&quot;&gt;Support 24/07&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-shoes4infoicons-item wow fadeIn&quot; data-wow-delay=&quot;600ms&quot;&gt;
+                &lt;div class=&quot;angels-shoes4infoicons-item-inner&quot;&gt;
+                    &lt;div class=&quot;angels-shoes4infoicons-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;
+                            &lt;svg width=&quot;32px&quot; height=&quot;32px&quot; class=&quot;angels-shoes4infoicons-img&quot;&gt;&lt;use xlink:href=&quot;#icon-ionicons-card&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                            &lt;!-- &lt;img class=&quot;angels-shoes4infoicons-img&quot; src=&quot;//placehold.it/35x35&quot; alt=&quot;35x35&quot; /&gt; --&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-shoes4infoicons-content&quot;&gt;
+                        &lt;p class=&quot;angels-shoes4infoicons-title&quot;&gt;100% Secure Checkout&lt;/p&gt;
+                        &lt;p class=&quot;angels-shoes4infoicons-desc&quot;&gt;PayPal / MasterCard / Visa&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="-section-fullwidth-banner">- Section Fullwidth Banner<a class="headerlink" href="#-section-fullwidth-banner" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-2-section-3.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-shoes-fullwidth-banner&quot;}}
+&lt;div class=&quot;chiara-section angels-section--shoesFullwidthBanner&quot;&gt;
+    &lt;div class=&quot;angels-shoesFullwidthBanner wow fadeIn&quot;&gt;
+        &lt;div class=&quot;angels-shoesFullwidthBanner-inner&quot;&gt;
+            &lt;div class=&quot;angels-shoesFullwidthBanner-img-container&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-shoesFullwidthBanner-img lazyload&quot; data-scale=&quot;1&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-shoes-fullwidth-banner.jpg&quot; width=&quot;1920&quot; height=&quot;574&quot; alt=&quot;1920x574&quot; /&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-shoesFullwidthBanner-content tm-inview&quot; data-movement=&quot;-20&quot;&gt;
+                &lt;p class=&quot;angels-shoesFullwidthBanner-subtitle&quot;&gt;#MYANGELS&lt;/p&gt;
+                &lt;p class=&quot;angels-shoesFullwidthBanner-title&quot;&gt;Skechers Men's Go Walk&lt;br/&gt;Max Sneaker.&lt;/p&gt;
+                &lt;p class=&quot;angels-shoesFullwidthBanner-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="-section-testimonials">- Section Testimonials<a class="headerlink" href="#-section-testimonials" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-2-section-4.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-shoes-testimonials&quot;}}
+&lt;div class=&quot;chiara-section angels-section--shoesTestimonials&quot;&gt;
+    &lt;div class=&quot;angels-shoesTestimonials wow fadeIn&quot;&gt;
+        &lt;div class=&quot;angels-shoesTestimonials-inner&quot;&gt;
+            &lt;div class=&quot;angels-shoesTestimonials-img-container&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-shoesTestimonials-img lazyload tm-inview&quot; data-movement=&quot;-50&quot; data-scale=&quot;1.15&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-shoes-testimonial-bg.jpg&quot; width=&quot;1920&quot; height=&quot;480&quot; alt=&quot;1920x480&quot; /&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-shoesTestimonials-content&quot;&gt;
+
+                &lt;ul class=&quot;angels-shoesTestimonials-slider&quot; data-slick='{
+                    &quot;arrows&quot;: false,
+                    &quot;dots&quot;: true,
+                    &quot;mobileFirst&quot;: true,
+                    &quot;slidesToScroll&quot;: 1,
+                    &quot;slidesToShow&quot;: 1,
+                    &quot;autoplay&quot;: true,
+                    &quot;autoplaySpeed&quot;: 5000
+                }'&gt;
+                    &lt;li class=&quot;angels-shoesTestimonials-slide&quot;&gt;
+                        &lt;p class=&quot;angels-shoesTestimonials-slide-desc&quot;&gt;“1. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus tortor mauris condimentum nibh.”&lt;/p&gt;
+                        &lt;p class=&quot;angels-shoesTestimonials-slide-title&quot;&gt;Scott Eastwood&lt;/p&gt;
+                        &lt;p class=&quot;angels-shoesTestimonials-slide-subtitle&quot;&gt;Mobile Development&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;angels-shoesTestimonials-slide&quot;&gt;
+                        &lt;p class=&quot;angels-shoesTestimonials-slide-desc&quot;&gt;“2. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus tortor mauris condimentum nibh.”&lt;/p&gt;
+                        &lt;p class=&quot;angels-shoesTestimonials-slide-title&quot;&gt;Scott Eastwood&lt;/p&gt;
+                        &lt;p class=&quot;angels-shoesTestimonials-slide-subtitle&quot;&gt;Mobile Development&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;angels-shoesTestimonials-slide&quot;&gt;
+                        &lt;p class=&quot;angels-shoesTestimonials-slide-desc&quot;&gt;“3. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus tortor mauris condimentum nibh.”&lt;/p&gt;
+                        &lt;p class=&quot;angels-shoesTestimonials-slide-title&quot;&gt;Scott Eastwood&lt;/p&gt;
+                        &lt;p class=&quot;angels-shoesTestimonials-slide-subtitle&quot;&gt;Mobile Development&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;angels-shoesTestimonials-slide&quot;&gt;
+                        &lt;p class=&quot;angels-shoesTestimonials-slide-desc&quot;&gt;4. “Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus tortor mauris condimentum nibh.”&lt;/p&gt;
+                        &lt;p class=&quot;angels-shoesTestimonials-slide-title&quot;&gt;Scott Eastwood&lt;/p&gt;
+                        &lt;p class=&quot;angels-shoesTestimonials-slide-subtitle&quot;&gt;Mobile Development&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;angels-shoesTestimonials-slide&quot;&gt;
+                        &lt;p class=&quot;angels-shoesTestimonials-slide-desc&quot;&gt;“5. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus tortor mauris condimentum nibh.”&lt;/p&gt;
+                        &lt;p class=&quot;angels-shoesTestimonials-slide-title&quot;&gt;Scott Eastwood&lt;/p&gt;
+                        &lt;p class=&quot;angels-shoesTestimonials-slide-subtitle&quot;&gt;Mobile Development&lt;/p&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="-section-product-by-category">- Section Product By Category<a class="headerlink" href="#-section-product-by-category" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-2-section-5.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial (concat &quot;angels-products-by-category&quot; index)}}
+&lt;div class=&quot;chiara-section angels-section--productsByCategory angels-section--productsByCategory-{{position}}&quot;&gt;
+    &lt;div class=&quot;angels-productsByCategory angels-productsByCategory--{{position}}&quot;&gt;
+        &lt;div class=&quot;angels-productsByCategory-banner wow fadeIn tm-inview&quot; data-movement=&quot;-30&quot;&gt;
+            &lt;div class=&quot;angels-productsByCategory-banner-content&quot;&gt;
+                {{#if banner_heading}}&lt;h5 class=&quot;angels-productsByCategory-banner-title&quot;&gt;{{{banner_heading}}}&lt;/h5&gt;{{/if}}
+                {{#if banner_button}}&lt;p class=&quot;angels-productsByCategory-banner-desc&quot;&gt;&lt;a href=&quot;#&quot;&gt;{{banner_button}}&lt;/a&gt;&lt;/p&gt;{{/if}}
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-productsByCategory-banner-img&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;lazyload&quot; data-sizes=&quot;auto&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;{{banner_image_domain}}{{banner_image_path}}&quot; alt=&quot;{{banner_heading}}&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;angels-productsByCategory-productsContainer&quot;&gt;
+            {{#if heading}}&lt;h3 class=&quot;angels-productsByCategory-heading&quot;&gt;{{heading}}&lt;/h3&gt;{{/if}}
+            &lt;div class=&quot;angels-productsByCategory-products&quot; data-products-by-category=&quot;{{url}}?{{#if sort}}sort={{sort}}{{/if}}{{#if plimit}}&amp;amp;limit={{plimit}}{{/if}}&quot;&gt;
+                &lt;img class=&quot;img-loading&quot; src=&quot;{{cdn 'img/loading.svg'}}&quot; alt=&quot;loading&quot; /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="custom-homepage-cosmetic">CUSTOM HOMEPAGE COSMETIC:<a class="headerlink" href="#custom-homepage-cosmetic" title="Permanent link">&para;</a></h2>
+<h3 id="default-sections_2">Default sections:<a class="headerlink" href="#default-sections_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>angels-cosmetic-welcome</strong></li>
+<li><strong>angels-cosmetic-bigsales</strong></li>
+<li><strong>angels-cosmetic-fullwidth-banner</strong></li>
+<li><strong>angels-cosmetic-products-tabs</strong></li>
+<li><strong>angels-cosmetic-column-banners</strong></li>
+<li><strong>angels-shoes-testimonials (View CUSTOM HOMEPAGE SHOES)</strong></li>
+<li><strong>angels-cosmetic-blog</strong></li>
+</ul>
+<h2 id="-section-welcome">- Section Welcome<a class="headerlink" href="#-section-welcome" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-3-section-1.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-cosmetic-welcome&quot;}}
+&lt;div class=&quot;chiara-section angels-section--cosmeticWelcome&quot;&gt;
+    &lt;div class=&quot;angels-cosmeticWelcome&quot;&gt;
+        &lt;div class=&quot;angels-cosmeticWelcome-inner&quot;&gt;
+            &lt;p class=&quot;angels-cosmeticWelcome-title wow fadeIn&quot;&gt;Welcome to Angels Store.&lt;/p&gt;
+            &lt;p class=&quot;angels-cosmeticWelcome-desc wow fadeIn&quot;&gt;Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis.&lt;/p&gt;
+            &lt;div class=&quot;angels-cosmeticWelcome-cols&quot;&gt;
+                &lt;div class=&quot;angels-cosmeticWelcome-cols-item wow fadeIn&quot;&gt;
+                    &lt;p class=&quot;angels-cosmeticWelcome-img-container&quot;&gt;&lt;img class=&quot;angels-cosmeticWelcome-img lazyload&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-cosmetic-welcom-img1.png&quot; width=&quot;123&quot; height=&quot;123&quot; alt=&quot;123x123&quot;&gt;&lt;/p&gt;
+                    &lt;p class=&quot;angels-cosmeticWelcome-col-title&quot;&gt;Who we are&lt;/p&gt;
+                    &lt;p class=&quot;angels-cosmeticWelcome-col-desc&quot;&gt;Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. &lt;/p&gt;
+                    &lt;p class=&quot;angels-cosmeticWelcome-col-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;learn more.&lt;/a&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;angels-cosmeticWelcome-cols-item wow fadeIn&quot; data-wow-delay=&quot;200ms&quot;&gt;
+                    &lt;p class=&quot;angels-cosmeticWelcome-img-container&quot;&gt;&lt;img class=&quot;angels-cosmeticWelcome-img lazyload&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-cosmetic-welcom-img2.png&quot; width=&quot;123&quot; height=&quot;123&quot; alt=&quot;123x123&quot;&gt;&lt;/p&gt;
+                    &lt;p class=&quot;angels-cosmeticWelcome-col-title&quot;&gt;Our Mission&lt;/p&gt;
+                    &lt;p class=&quot;angels-cosmeticWelcome-col-desc&quot;&gt;Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. &lt;/p&gt;
+                    &lt;p class=&quot;angels-cosmeticWelcome-col-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;learn more.&lt;/a&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;angels-cosmeticWelcome-cols-item wow fadeIn&quot; data-wow-delay=&quot;400ms&quot;&gt;
+                    &lt;p class=&quot;angels-cosmeticWelcome-img-container&quot;&gt;&lt;img class=&quot;angels-cosmeticWelcome-img lazyload&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-cosmetic-welcom-img3.png&quot; width=&quot;123&quot; height=&quot;123&quot; alt=&quot;123x123&quot;&gt;&lt;/p&gt;
+                    &lt;p class=&quot;angels-cosmeticWelcome-col-title&quot;&gt;Natural Skincare&lt;/p&gt;
+                    &lt;p class=&quot;angels-cosmeticWelcome-col-desc&quot;&gt;Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. &lt;/p&gt;
+                    &lt;p class=&quot;angels-cosmeticWelcome-col-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;learn more.&lt;/a&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="-section-big-sales">- Section Big Sales<a class="headerlink" href="#-section-big-sales" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-3-section-2.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-cosmetic-bigsales&quot;}}
+&lt;div class=&quot;chiara-section angels-section--cosmeticBigsales&quot;&gt;
+    &lt;div class=&quot;angels-cosmeticBigsales wow fadeIn&quot;&gt;
+        &lt;div class=&quot;angels-cosmeticBigsales-inner&quot;&gt;
+            &lt;p class=&quot;angels-cosmeticBigsales-title&quot;&gt;Big Sales&lt;/p&gt;
+            &lt;p class=&quot;angels-cosmeticBigsales-desc&quot;&gt;Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis.&lt;/p&gt;
+            &lt;ul class=&quot;angels-cosmeticBigsales-grid&quot; data-products-by-category=&quot;/shop-all/?sort=newest&amp;amp;limit=4&quot; data-template=&quot;angels/sections/cosmetic-bigsales-grid&quot;&gt;
+                &lt;img class=&quot;img-loading&quot; src=&quot;{{cdn 'img/loading.svg'}}&quot; alt=&quot;loading&quot; /&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="-section-fullwidth-banner_1">- Section Fullwidth Banner<a class="headerlink" href="#-section-fullwidth-banner_1" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-3-section-3.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-cosmetic-fullwidth-banner&quot;}}
+&lt;div class=&quot;chiara-section angels-section--cosmeticFullwidthBanner&quot;&gt;
+    &lt;div class=&quot;angels-cosmeticFullwidthBanner wow fadeIn&quot;&gt;
+        &lt;div class=&quot;angels-cosmeticFullwidthBanner-inner&quot;&gt;
+            &lt;div class=&quot;angels-cosmeticFullwidthBanner-img-container&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-cosmeticFullwidthBanner-img lazyload&quot; data-scale=&quot;1&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-cosmetic-fullwidth-banner.jpg&quot; width=&quot;1920&quot; height=&quot;680&quot; alt=&quot;1920x680&quot; /&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-cosmeticFullwidthBanner-content tm-inview&quot; data-movement=&quot;-20&quot;&gt;
+                &lt;p class=&quot;angels-cosmeticFullwidthBanner-subtitle&quot;&gt;FEATURED SPRING 2019&lt;/p&gt;
+                &lt;p class=&quot;angels-cosmeticFullwidthBanner-title&quot;&gt;Collections of Natural Products.&lt;/p&gt;
+                &lt;div class=&quot;angels-cosmeticFullwidthBanner-desc&quot;&gt;
+                    &lt;p&gt;Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.&lt;/p&gt;
+                    &lt;p&gt;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;p class=&quot;angels-cosmeticFullwidthBanner-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;View all collections&lt;/a&gt;&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="-section-products-tabs">- Section Products Tabs<a class="headerlink" href="#-section-products-tabs" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-3-section-4.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-cosmetic-products-tabs&quot;}}
+&lt;div class=&quot;chiara-section angels-section--cosmeticFullwidthBanner&quot;&gt;
+    &lt;div class=&quot;angels-cosmeticFullwidthBanner wow fadeIn&quot;&gt;
+        &lt;div class=&quot;angels-cosmeticFullwidthBanner-inner&quot;&gt;
+            &lt;div class=&quot;angels-cosmeticFullwidthBanner-img-container&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-cosmeticFullwidthBanner-img lazyload&quot; data-scale=&quot;1&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-cosmetic-fullwidth-banner.jpg&quot; width=&quot;1920&quot; height=&quot;680&quot; alt=&quot;1920x680&quot; /&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-cosmeticFullwidthBanner-content tm-inview&quot; data-movement=&quot;-20&quot;&gt;
+                &lt;p class=&quot;angels-cosmeticFullwidthBanner-subtitle&quot;&gt;FEATURED SPRING 2019&lt;/p&gt;
+                &lt;p class=&quot;angels-cosmeticFullwidthBanner-title&quot;&gt;Collections of Natural Products.&lt;/p&gt;
+                &lt;div class=&quot;angels-cosmeticFullwidthBanner-desc&quot;&gt;
+                    &lt;p&gt;Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.&lt;/p&gt;
+                    &lt;p&gt;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;p class=&quot;angels-cosmeticFullwidthBanner-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;View all collections&lt;/a&gt;&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="-section-columns-banners">- Section Columns Banners<a class="headerlink" href="#-section-columns-banners" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-3-section-5.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-cosmetic-column-banners&quot;}}
+&lt;div class=&quot;chiara-section angels-section--cosmeticColumnBanners&quot;&gt;
+    &lt;div class=&quot;angels-cosmeticColumnBanners&quot;&gt;
+        &lt;div class=&quot;angels-cosmeticColumnBanners-cols&quot;&gt;
+            &lt;div class=&quot;angels-cosmeticColumnBanners-item wow fadeIn&quot;&gt;
+                &lt;div class=&quot;angels-cosmeticColumnBanners-item-inner tm-hoverImg&quot;&gt;
+                    &lt;div class=&quot;angels-cosmeticColumnBanners-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-cosmeticColumnBanners-img lazyload&quot; data-scale=&quot;1&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-cosmetic-col-banner1.jpg&quot; width=&quot;738&quot; height=&quot;414&quot; alt=&quot;738x414&quot; /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-cosmeticColumnBanners-content tm-inview&quot; data-movement=&quot;-20&quot;&gt;
+                        &lt;p class=&quot;angels-cosmeticColumnBanners-subtitle&quot;&gt;#MYANGELS&lt;/p&gt;
+                        &lt;p class=&quot;angels-cosmeticColumnBanners-title&quot;&gt;Beauty Offers&lt;/p&gt;
+                        &lt;p class=&quot;angels-cosmeticColumnBanners-desc&quot;&gt;Get the skincare everyone is raving about pick two of these must have trial sizes.&lt;/p&gt;
+                        &lt;p class=&quot;angels-cosmeticColumnBanners-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-cosmeticColumnBanners-item wow fadeIn&quot; data-wow-delay=&quot;200ms&quot;&gt;
+                &lt;div class=&quot;angels-cosmeticColumnBanners-item-inner tm-hoverImg&quot;&gt;
+                    &lt;div class=&quot;angels-cosmeticColumnBanners-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-cosmeticColumnBanners-img lazyload&quot; data-scale=&quot;1&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-cosmetic-col-banner2.jpg&quot; width=&quot;738&quot; height=&quot;414&quot; alt=&quot;738x414&quot; /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-cosmeticColumnBanners-content tm-inview&quot; data-movement=&quot;-20&quot;&gt;
+                        &lt;p class=&quot;angels-cosmeticColumnBanners-subtitle&quot;&gt;WEEK 2:  APRIL 16-23&lt;/p&gt;
+                        &lt;p class=&quot;angels-cosmeticColumnBanners-title&quot;&gt;40% off everyday&lt;/p&gt;
+                        &lt;p class=&quot;angels-cosmeticColumnBanners-desc&quot;&gt;Excecudes clearnce &amp;amp; special&lt;/p&gt;
+                        &lt;p class=&quot;angels-cosmeticColumnBanners-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="-section-blog">- Section Blog<a class="headerlink" href="#-section-blog" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-3-section-6.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-cosmetic-blog&quot;}}
+&lt;div class=&quot;chiara-section angels-section--blog&quot;&gt;
+    &lt;div class=&quot;angels-cosmeticBlog&quot;&gt;
+        &lt;div class=&quot;angels-cosmeticBlog-blog wow fadeIn&quot;&gt;
+            &lt;h3 class=&quot;angels-cosmeticBlog-title&quot;&gt;From our blog&lt;/h3&gt;
+            &lt;ul class=&quot;angels-cosmeticBlog-posts&quot;&gt;
+                {{#each blog.recent_posts}}
+                    &lt;li class=&quot;angels-cosmeticBlog-posts-item&quot;&gt;
+                        &lt;p class=&quot;angels-cosmeticBlog-post-date&quot; data-moment-input-format=&quot;MMM Do YYYY&quot;&gt;{{date_published}}&lt;/p&gt;
+                        {{#if tags}}
+                            &lt;ul class=&quot;angels-cosmeticBlog-post-tags&quot;&gt;
+                                {{#each tags}}
+                                &lt;li class=&quot;angels-cosmeticBlog-post-tags-item&quot;&gt;
+                                    &lt;a href=&quot;{{url}}&quot;&gt;{{name}}&lt;/a&gt;
+                                &lt;/li&gt;
+                                {{/each}}
+                            &lt;/ul&gt;
+                        {{/if}}
+                        &lt;h4 class=&quot;angels-cosmeticBlog-post-title&quot;&gt;&lt;a href=&quot;{{url}}&quot;&gt;{{title}}&lt;/a&gt;&lt;/h4&gt;
+                        {{#if author}}
+                            &lt;p class=&quot;angels-cosmeticBlog-post-author&quot;&gt;{{lang 'blog.posted_by' name=author}}&lt;/p&gt;
+                        {{/if}}
+                    &lt;/li&gt;
+                {{/each}}
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;angels-cosmeticBlog-video wow fadeIn&quot; data-wow-delay=&quot;200ms&quot;&gt;
+            &lt;h3 class=&quot;angels-cosmeticBlog-title&quot;&gt;Video Beauty Services&lt;/h3&gt;
+            &lt;div class=&quot;angels-cosmeticBlog-video-banner tm-hoverImg&quot;&gt;
+                &lt;div class=&quot;angels-cosmeticBlog-video-img-container&quot;&gt;&lt;img class=&quot;angels-cosmeticBlog-video-img lazyload&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-cosmetic-blog-video.jpg&quot; width=&quot;738&quot; height=&quot;466&quot; alt=&quot;738x466&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;angels-cosmeticBlog-video-content tm-inview&quot; data-movement=&quot;-30&quot;&gt;
+                    &lt;p class=&quot;angels-cosmeticBlog-video-subtitle&quot;&gt;THAT'S HOW IT IS&lt;/p&gt;
+                    &lt;p class=&quot;angels-cosmeticBlog-video-title&quot;&gt;Make-up beauty services&lt;/p&gt;
+                    &lt;p class=&quot;angels-cosmeticBlog-video-action&quot;&gt;&lt;a href=&quot;#&quot; title=&quot;Play&quot;&gt;
+                        &lt;span class=&quot;fa-stack fa-2x&quot;&gt;
+                            &lt;i class=&quot;fas fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                            &lt;i class=&quot;fas fa-play fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                          &lt;/span&gt;
+                    &lt;/a&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="custom-homepage-furniture">CUSTOM HOMEPAGE FURNITURE:<a class="headerlink" href="#custom-homepage-furniture" title="Permanent link">&para;</a></h2>
+<h3 id="default-sections_3">Default sections:<a class="headerlink" href="#default-sections_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>angels-shoes-simple-text (View CUSTOM HOMEPAGE SHOES)</strong></li>
+<li><strong>angels-furniture-featured-collections</strong></li>
+<li><strong>angels-furniture-fullwidth-banner</strong></li>
+<li><strong>angels-furniture-products-tabs</strong></li>
+<li><strong>angels-shoes-testimonials (View CUSTOM HOMEPAGE SHOES)</strong></li>
+<li><strong>angels-furniture-blog</strong></li>
+</ul>
+<h2 id="-section-featured-collections_1">- Section Featured Collections<a class="headerlink" href="#-section-featured-collections_1" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-4-section-1.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-furniture-featured-collections&quot;}}
+&lt;div class=&quot;chiara-section angels-section--furnitureFeaturedCollections&quot;&gt;
+    &lt;div class=&quot;angels-furnitureFeaturedCollections&quot;&gt;
+        &lt;h2 class=&quot;page-heading&quot;&gt;Featured Collections&lt;/h2&gt;
+        &lt;div class=&quot;angels-furnitureFeaturedCollections-list&quot;&gt;
+            &lt;div class=&quot;angels-furnitureFeaturedCollections-item wow fadeIn&quot;&gt;
+                &lt;div class=&quot;angels-furnitureFeaturedCollections-item-inner tm-hoverImg&quot;&gt;
+                    &lt;div class=&quot;angels-furnitureFeaturedCollections-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-furnitureFeaturedCollections-img lazyload tm-inview&quot; data-movement=&quot;-20&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-furniture-banner01.jpg&quot; width=&quot;730&quot; height=&quot;485&quot; alt=&quot;730x485&quot; /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-furnitureFeaturedCollections-content tm-inview&quot; data-movement=&quot;10&quot;&gt;
+                        &lt;p class=&quot;angels-furnitureFeaturedCollections-subtitle&quot;&gt;Chair&lt;/p&gt;
+                        &lt;p class=&quot;angels-furnitureFeaturedCollections-title&quot;&gt;Simple &amp; Wooden chair &lt;br/&gt;isolated against&lt;/p&gt;
+                        &lt;p class=&quot;angels-furnitureFeaturedCollections-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-furnitureFeaturedCollections-item wow fadeIn&quot; data-wow-delay=&quot;200ms&quot;&gt;
+                &lt;div class=&quot;angels-furnitureFeaturedCollections-item-inner tm-hoverImg&quot;&gt;
+                    &lt;div class=&quot;angels-furnitureFeaturedCollections-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-furnitureFeaturedCollections-img lazyload tm-inview&quot; data-movement=&quot;-30&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-furniture-banner02.jpg&quot; width=&quot;470&quot; height=&quot;314&quot; alt=&quot;470x314&quot; /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-furnitureFeaturedCollections-content tm-inview&quot; data-movement=&quot;15&quot;&gt;
+                            &lt;p class=&quot;angels-furnitureFeaturedCollections-subtitle&quot;&gt;Table&lt;/p&gt;
+                        &lt;p class=&quot;angels-furnitureFeaturedCollections-title&quot;&gt;Minimalist table wood&lt;/p&gt;
+                        &lt;p class=&quot;angels-furnitureFeaturedCollections-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-furnitureFeaturedCollections-item wow fadeIn&quot;&gt;
+                &lt;div class=&quot;angels-furnitureFeaturedCollections-item-inner tm-hoverImg&quot;&gt;
+                    &lt;div class=&quot;angels-furnitureFeaturedCollections-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-furnitureFeaturedCollections-img lazyload tm-inview&quot; data-movement=&quot;-30&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-furniture-banner03.jpg&quot; width=&quot;570&quot; height=&quot;394&quot; alt=&quot;570x394&quot; /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-furnitureFeaturedCollections-content tm-inview&quot; data-movement=&quot;15&quot;&gt;
+                            &lt;p class=&quot;angels-furnitureFeaturedCollections-subtitle&quot;&gt;Sofa&lt;/p&gt;
+                        &lt;p class=&quot;angels-furnitureFeaturedCollections-title&quot;&gt;Minimalist table wood&lt;/p&gt;
+                        &lt;p class=&quot;angels-furnitureFeaturedCollections-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-furnitureFeaturedCollections-item wow fadeIn&quot; data-wow-delay=&quot;200ms&quot;&gt;
+                &lt;div class=&quot;angels-furnitureFeaturedCollections-item-inner tm-hoverImg&quot;&gt;
+                    &lt;div class=&quot;angels-furnitureFeaturedCollections-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-furnitureFeaturedCollections-img lazyload tm-inview&quot; data-movement=&quot;-60&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-furniture-banner04.jpg&quot; width=&quot;270&quot; height=&quot;616&quot; alt=&quot;270x616&quot; /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-furnitureFeaturedCollections-content tm-inview&quot; data-movement=&quot;30&quot;&gt;
+                            &lt;p class=&quot;angels-furnitureFeaturedCollections-subtitle&quot;&gt;Lamp&lt;/p&gt;
+                        &lt;p class=&quot;angels-furnitureFeaturedCollections-title&quot;&gt;Lamp Wood&lt;/p&gt;
+                        &lt;p class=&quot;angels-furnitureFeaturedCollections-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="-section-fullwidth-banner_2">- Section Fullwidth Banner<a class="headerlink" href="#-section-fullwidth-banner_2" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-4-section-2.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-furniture-fullwidth-banner&quot;}}
+&lt;div class=&quot;chiara-section angels-section--furnitureFullwidthBanner&quot;&gt;
+    &lt;div class=&quot;angels-furnitureFullwidthBanner wow fadeIn&quot;&gt;
+        &lt;div class=&quot;angels-furnitureFullwidthBanner-inner&quot;&gt;
+            &lt;div class=&quot;angels-furnitureFullwidthBanner-img-container&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-furnitureFullwidthBanner-img lazyload&quot; data-scale=&quot;1&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//chiara.mybigcommerce.com/product_images/uploaded_images/angels-furniture-fullwidth-banner.jpg&quot; width=&quot;1920&quot; height=&quot;680&quot; alt=&quot;1920x680&quot; /&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-furnitureFullwidthBanner-content tm-inview&quot; data-movement=&quot;20&quot;&gt;
+                &lt;div class=&quot;angels-furnitureFullwidthBanner-content-inner&quot;&gt;
+                    &lt;p class=&quot;angels-furnitureFullwidthBanner-title&quot;&gt;&lt;a href=&quot;#&quot;&gt;Furniture &amp;amp; Decor&lt;br/&gt;Lookbook Inspiration 2018.&lt;/a&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="-section-products-tabs_1">- Section Products Tabs<a class="headerlink" href="#-section-products-tabs_1" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-4-section-3.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-furniture-products-tabs&quot;}}
+&lt;div class=&quot;chiara-section angels-section--furnitureProductsTabs&quot;&gt;
+    &lt;div class=&quot;angels-furnitureProductsTabs&quot;&gt;
+        &lt;h2 class=&quot;page-heading&quot;&gt;Trending Products&lt;/h2&gt;
+        &lt;ul class=&quot;angels-furnitureProductsTabs-tabs&quot; data-tab role=&quot;tablist&quot;&gt;
+            &lt;li class=&quot;angels-furnitureProductsTabs-tab is-active&quot; role=&quot;presentation&quot;&gt;&lt;a href=&quot;#angels-furnitureProductsTabs-featuredProducts&quot; role=&quot;tab&quot; aria-selected=&quot;true&quot; aria-controls=&quot;angels-furnitureProductsTabs-featuredProducts&quot;&gt;Featured Products&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;angels-furnitureProductsTabs-tab&quot; role=&quot;presentation&quot;&gt;&lt;a href=&quot;#angels-furnitureProductsTabs-newProducts&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; aria-controls=&quot;angels-furnitureProductsTabs-newProducts&quot;&gt;New Arrivals&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;angels-furnitureProductsTabs-tab&quot; role=&quot;presentation&quot;&gt;&lt;a href=&quot;#angels-furnitureProductsTabs-topProducts&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; aria-controls=&quot;angels-furnitureProductsTabs-topProducts&quot;&gt;Top Sales&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class=&quot;angels-furnitureProductsTabs-tabsContent&quot;&gt;
+            &lt;div class=&quot;angels-furnitureProductsTabs-tabsContent-item is-active&quot; id=&quot;angels-furnitureProductsTabs-featuredProducts&quot; role=&quot;tabpanel&quot; aria-hidden=&quot;false&quot;&gt;
+                {{&gt; components/chiara/products/grid products=products.featured}}
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-furnitureProductsTabs-tabsContent-item&quot; id=&quot;angels-furnitureProductsTabs-newProducts&quot; role=&quot;tabpanel&quot; aria-hidden=&quot;true&quot;&gt;
+                {{&gt; components/chiara/products/grid products=products.new}}
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-furnitureProductsTabs-tabsContent-item&quot; id=&quot;angels-furnitureProductsTabs-topProducts&quot; role=&quot;tabpanel&quot; aria-hidden=&quot;true&quot;&gt;
+                {{&gt; components/chiara/products/grid products=products.top_sellers}}
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="-section-blog_1">- Section Blog<a class="headerlink" href="#-section-blog_1" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-4-section-4.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-furniture-blog&quot;}}
+&lt;div class=&quot;chiara-section angels-section--blog&quot;&gt;
+    &lt;div class=&quot;angels-furnitureBlog&quot;&gt;
+        &lt;h3 class=&quot;angels-furnitureBlog-title&quot;&gt;From our blog&lt;/h3&gt;
+        &lt;ul class=&quot;angels-furnitureBlog-posts&quot;&gt;
+            {{#each blog.recent_posts}}
+                &lt;li class=&quot;angels-furnitureBlog-posts-item wow fadeIn&quot; data-wow-delay=&quot;{{#ifOdd @index}}200ms{{else}}0{{/ifOdd}}&quot;&gt;
+                    &lt;div class=&quot;angels-furnitureBlog-post-figure&quot;&gt;
+                        {{#if thumbnail}}
+                            &lt;figure class=&quot;angels-furnitureBlog-thumbnail&quot;&gt;
+                                &lt;a href=&quot;{{url}}&quot;&gt;
+                                    &lt;img class=&quot;lazyload&quot; data-sizes=&quot;auto&quot; src=&quot;{{cdn 'img/loading.svg'}}&quot; data-src=&quot;{{#if large_image}}{{getImage thumbnail 'blog_post_size'}}{{else}}{{getImage thumbnail 'blog_size'}}{{/if}}&quot; alt=&quot;{{thumbnail.alt}}&quot; title=&quot;{{thumbnail.alt}}&quot;&gt;
+                                &lt;/a&gt;
+                            &lt;/figure&gt;
+                        {{/if}}
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-furnitureBlog-post-body&quot;&gt;
+                        {{#if tags}}
+                            &lt;ul class=&quot;angels-furnitureBlog-post-tags&quot;&gt;
+                                {{#each tags}}
+                                &lt;li class=&quot;angels-furnitureBlog-post-tags-item&quot;&gt;
+                                    &lt;a href=&quot;{{url}}&quot;&gt;{{name}}&lt;/a&gt;
+                                &lt;/li&gt;
+                                {{/each}}
+                            &lt;/ul&gt;
+                        {{/if}}
+                        &lt;h4 class=&quot;angels-furnitureBlog-post-title&quot;&gt;&lt;a href=&quot;{{url}}&quot;&gt;{{title}}&lt;/a&gt;&lt;/h4&gt;
+                        &lt;p class=&quot;angels-furnitureBlog-post-summary&quot;&gt;{{{summary}}}&lt;/p&gt;
+                        &lt;p class=&quot;angels-furnitureBlog-post-readmore&quot;&gt;&lt;a href=&quot;{{url}}&quot;&gt;{{lang 'blog.read_more'}}&lt;/a&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+            {{/each}}
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="products-sections-new-featured-bestselling">Products Sections (New / Featured / Bestselling)<a class="headerlink" href="#products-sections-new-featured-bestselling" title="Permanent link">&para;</a></h2>
+<p><img alt="Homepage products section" src="img/homepage-products-section.png" /></p>
+<p>Configure New Products, Featured Products, Bestselling Products showing on the home page in <strong>Theme Editor</strong> &gt; <strong>Homepage</strong>:</p>
+<ul>
+<li><strong>Number of products to display.</strong></li>
+<li><strong>Heading of the new, featured, bestselling product blocks.</strong></li>
+<li><strong>Sub-heading.</strong></li>
+<li><strong>Columns (number of products per row).</strong></li>
+<li><strong>Columns on tablet.</strong></li>
+<li><strong>Columns on mobile.</strong></li>
+<li><strong>Type (Grid or List).</strong></li>
+<li><strong>Style (default or parallax).</strong></li>
+</ul>
+<p><img alt="Homepage products section 2" src="img/homepage-products-section-2.png" /></p>
+<h2 id="instagram-photos-feed">Instagram Photos Feed<a class="headerlink" href="#instagram-photos-feed" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage instagram" src="img/homepage-instagram.png" /></p>
+<p>Configure Instagram section on the home page in <strong>Theme Editor</strong> &gt; <strong>Home Page</strong> &gt; <strong>Instagram</strong>:</p>
+<ul>
+<li><strong>Token Access</strong>: Use this tool to generate your Instagram token access code: <a href="https://bit.ly/2rpaWxU">https://bit.ly/2rpaWxU</a>.</li>
+<li><strong>Number of photos</strong> to display.</li>
+<li><strong>Columns</strong> (or photos per row).</li>
+<li><strong>Type</strong>: <code>Boxed</code> - display like Furniture demo. <code>Fullwidth</code> - display like Fashion demo.</li>
+<li><strong>Heading</strong>.</li>
+<li><strong>Subheading</strong>.</li>
+</ul>
+<h2 id="images-carousel-or-brands-carousel">Images Carousel or Brands Carousel<a class="headerlink" href="#images-carousel-or-brands-carousel" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage brands carousel" src="img/homepage-brands-carousel.png" /></p>
+<p>To display the images carousel, create a new banner in <strong>Marketing</strong> &gt; <strong>Banners</strong>:</p>
+<ul>
+<li><strong>Banner Name</strong>: <code>Brands carousel (brands-carousel)</code></li>
+<li><strong>Banner Content</strong>: Click on the HTML to edit HTML source.</li>
+</ul>
+<pre><code class="html">&lt;ul class=&quot;chiara-brandsCarousel-slider&quot; data-remote-brand-position=&quot;chiara-brand-banner-homepage&quot;&gt;
+&lt;li class=&quot;chiara-brandsCarousel-item&quot;&gt;&lt;a title=&quot;Brand 1&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/brand1.jpg&quot; alt=&quot;Brand 1&quot; /&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;chiara-brandsCarousel-item&quot;&gt;&lt;a title=&quot;Brand 2&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/brand2.jpg&quot; alt=&quot;Brand 2&quot; /&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;chiara-brandsCarousel-item&quot;&gt;&lt;a title=&quot;Brand 3&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/brand3.jpg&quot; alt=&quot;Brand 3&quot; /&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;chiara-brandsCarousel-item&quot;&gt;&lt;a title=&quot;Brand 4&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/brand4.jpg&quot; alt=&quot;Brand 4&quot; /&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;chiara-brandsCarousel-item&quot;&gt;&lt;a title=&quot;Brand 5&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/brand5.jpg&quot; alt=&quot;Brand 5&quot; /&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;chiara-brandsCarousel-item&quot;&gt;&lt;a title=&quot;Brand 6&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/brand6.jpg&quot; alt=&quot;Brand 6&quot; /&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;chiara-brandsCarousel-item&quot;&gt;&lt;a title=&quot;Brand 7&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/brand7.jpg&quot; alt=&quot;Brand 7&quot; /&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;chiara-brandsCarousel-item&quot;&gt;&lt;a title=&quot;Brand 8&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/brand8.jpg&quot; alt=&quot;Brand 8&quot; /&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<p>Or use button below to generate HTML code with your custom content:</p>
+<!-- Button trigger modal -->
+
+<p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#chiara_home_banner3_modal">
+  Launch Banner Code Generator
+</button></p>
+<ul>
+<li><strong>Show on Page</strong>: <code>Home Page</code></li>
+<li><strong>Location</strong>: <code>Top of Page</code></li>
+</ul>
+<h2 id="sidebar-new-products-banners-facebook">Sidebar - New Products, Banners &amp; Facebook<a class="headerlink" href="#sidebar-new-products-banners-facebook" title="Permanent link">&para;</a></h2>
+<h3 id="custom-banners-on-the-sidebar">Custom banners on the sidebar<a class="headerlink" href="#custom-banners-on-the-sidebar" title="Permanent link">&para;</a></h3>
+<p>Theme support custom banners display on the sidebar for category pages and brand pages.</p>
+<p>To enable these banners, open <strong>Theme Editor</strong> &gt; <strong>Sidebar</strong>, tick on these options:</p>
+<ul>
+<li><strong>Show banner #1 on category pages</strong></li>
+<li><strong>Show banner #2 on category pages</strong></li>
+<li><strong>Show banner #1 on brand pages</strong></li>
+<li><strong>Show banner #2 on brand pages</strong></li>
+</ul>
+<p>Create a new banner in <strong>Marketing</strong> &gt; <strong>Banners</strong>:</p>
+<h4 id="banner-1-on-category-pages">Banner 1 on category pages<a class="headerlink" href="#banner-1-on-category-pages" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Banner Name</strong>: <code>Sidebar banner on category pages (chiara-sidebar-category-banner1)</code></li>
+<li><strong>Banner Content</strong>: Click on the HTML to edit HTML source.</li>
+</ul>
+<pre><code class="html">&lt;div data-remote-banner-position=&quot;chiara-sidebar-category-banner1&quot;&gt;&lt;img title=&quot;banner-sidebar.jpg&quot; src=&quot;https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/banner-sidebar.jpg&quot; alt=&quot;banner-sidebar.jpg&quot;/&gt;
+&lt;div class=&quot;sidebar-banner-content&quot;&gt;
+&lt;h4 class=&quot;sidebar-banner-title&quot;&gt;beauty&lt;/h4&gt;
+&lt;h5 class=&quot;sidebar-banner-subtitle&quot;&gt;from &amp;pound;29.99&lt;/h5&gt;
+&lt;a class=&quot;sidebar-banner-link&quot; href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Or use button below to generate HTML code with your custom content:</p>
+<!-- Button trigger modal -->
+
+<p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#chiara_sidebar_category_banner1_modal">
+  Launch Banner Code Generator
+</button></p>
+<ul>
+<li><strong>Show on Page</strong>: <code>Home Page</code></li>
+<li><strong>Location</strong>: <code>Top of Page</code></li>
+</ul>
+<h4 id="banner-2-on-category-pages">Banner 2 on category pages<a class="headerlink" href="#banner-2-on-category-pages" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Banner Name</strong>: <code>Sidebar banner on category pages (chiara-sidebar-category-banner2)</code></li>
+<li><strong>Banner Content</strong>: Click on the HTML to edit HTML source.</li>
+</ul>
+<pre><code class="html">&lt;div data-remote-banner-position=&quot;chiara-sidebar-category-banner2&quot;&gt;&lt;img src=&quot;https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/banner-sidebar.jpg&quot; alt=&quot;banner-sidebar.jpg&quot;/&gt;
+&lt;div class=&quot;sidebar-banner-content&quot;&gt;
+&lt;h4 class=&quot;sidebar-banner-title&quot;&gt;beauty&lt;/h4&gt;
+&lt;h5 class=&quot;sidebar-banner-subtitle&quot;&gt;from &amp;pound;29.99&lt;/h5&gt;
+&lt;a class=&quot;sidebar-banner-link&quot; href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Or use button below to generate HTML code with your custom content:</p>
+<!-- Button trigger modal -->
+
+<p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#chiara_sidebar_category_banner2_modal">
+  Launch Banner Code Generator
+</button></p>
+<ul>
+<li><strong>Show on Page</strong>: <code>Home Page</code></li>
+<li><strong>Location</strong>: <code>Top of Page</code></li>
+</ul>
+<h4 id="banner-1-on-brand-pages">Banner 1 on brand pages<a class="headerlink" href="#banner-1-on-brand-pages" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Banner Name</strong>: <code>Sidebar banner on brand pages (chiara-sidebar-brand-banner1)</code></li>
+<li><strong>Banner Content</strong>: Click on the HTML to edit HTML source.</li>
+</ul>
+<pre><code class="html">&lt;div data-remote-banner-position=&quot;chiara-sidebar-brand-banner1&quot;&gt;&lt;img src=&quot;https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/banner-sidebar.jpg&quot; alt=&quot;banner-sidebar.jpg&quot;/&gt;
+&lt;div class=&quot;sidebar-banner-content&quot;&gt;
+&lt;h4 class=&quot;sidebar-banner-title&quot;&gt;beauty&lt;/h4&gt;
+&lt;h5 class=&quot;sidebar-banner-subtitle&quot;&gt;from &amp;pound;29.99&lt;/h5&gt;
+&lt;a class=&quot;sidebar-banner-link&quot; href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Or use button below to generate HTML code with your custom content:</p>
+<!-- Button trigger modal -->
+
+<p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#chiara_sidebar_brand_banner1_modal">
+  Launch Banner Code Generator
+</button></p>
+<ul>
+<li><strong>Show on Page</strong>: <code>Home Page</code></li>
+<li><strong>Location</strong>: <code>Top of Page</code></li>
+</ul>
+<h4 id="banner-2-on-brand-pages">Banner 2 on brand pages<a class="headerlink" href="#banner-2-on-brand-pages" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Banner Name</strong>: <code>Sidebar banner on brand pages (chiara-sidebar-brand-banner2)</code></li>
+<li><strong>Banner Content</strong>: Click on the HTML to edit HTML source.</li>
+</ul>
+<pre><code class="html">&lt;div data-remote-banner-position=&quot;chiara-sidebar-brand-banner2&quot;&gt;&lt;img src=&quot;https://cdn8.bigcommerce.com/s-o0llnqp9lx/product_images/uploaded_images/banner-sidebar.jpg&quot; alt=&quot;banner-sidebar.jpg&quot;/&gt;
+&lt;div class=&quot;sidebar-banner-content&quot;&gt;
+&lt;h4 class=&quot;sidebar-banner-title&quot;&gt;beauty&lt;/h4&gt;
+&lt;h5 class=&quot;sidebar-banner-subtitle&quot;&gt;from &amp;pound;29.99&lt;/h5&gt;
+&lt;a class=&quot;sidebar-banner-link&quot; href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Or use button below to generate HTML code with your custom content:</p>
+<!-- Button trigger modal -->
+
+<p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#chiara_sidebar_brand_banner2_modal">
+  Launch Banner Code Generator
+</button></p>
+<ul>
+<li><strong>Show on Page</strong>: <code>Home Page</code></li>
+<li><strong>Location</strong>: <code>Top of Page</code></li>
+</ul>
+<h3 id="new-products">New Products<a class="headerlink" href="#new-products" title="Permanent link">&para;</a></h3>
+<p><img alt="Sidebar new products" src="img/sidebar-new-products.png" /></p>
+<p>Configure in <strong>Theme Editor</strong> &gt; <strong>Sidebar</strong>:</p>
+<ul>
+<li><strong>New products</strong>: number of products to display.</li>
+</ul>
+<h3 id="facebook-likes-chat-box">Facebook likes &amp; chat box<a class="headerlink" href="#facebook-likes-chat-box" title="Permanent link">&para;</a></h3>
+<p><img alt="sidebar facebook" src="img/sidebar-facebook.png" /></p>
+<p>Configure in <strong>Theme Editor</strong> &gt; <strong>Sidebar</strong>, input your facebook page name in <strong>Facebook page</strong> text box. If your facebook page URL is <code>https://facebook.com/papathemes</code>, input only <code>papathemes</code>. Make sure your Facebook page is public for anyone in order to display on your store.</p>
+<h2 id="product-page-settings">Product Page Settings<a class="headerlink" href="#product-page-settings" title="Permanent link">&para;</a></h2>
+<p>Configure settings for product pages in <strong>Theme Editor</strong> &gt; <strong>Products</strong>.</p>
+<h2 id="infinite-product-loading">Infinite product loading<a class="headerlink" href="#infinite-product-loading" title="Permanent link">&para;</a></h2>
+<p>Theme support infinite product loading or infinite scroll on category pages, brand pages and search results pages. It is automatically enabled by default. You can configure this option in <strong>Theme Editor</strong> &gt; <strong>Products</strong> &gt; <strong>Infinite Scroll</strong>:</p>
+<ul>
+<li><strong>Category pages</strong></li>
+<li><strong>Brands pages</strong></li>
+<li><strong>Brand pages</strong></li>
+<li><strong>Search pages</strong></li>
+</ul>
+<h2 id="product-card-color-swatches">Product Card &amp; Color Swatches<a class="headerlink" href="#product-card-color-swatches" title="Permanent link">&para;</a></h2>
+<p><img alt="product card" src="img/product-card.png" /></p>
+<p>Configure how products display on listing in <strong>Theme Editor</strong> &gt; <strong>Products</strong> &gt; <strong>Product cards</strong>:</p>
+<ul>
+<li><strong>Product title color &amp; hover color</strong>.</li>
+<li><strong>Button text color &amp; background color</strong>.</li>
+<li><strong>Show brand</strong></li>
+<li><strong>Show color swatches</strong>: To display color swatches for product options with type "Swatches".</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="faqs.html" class="btn btn-neutral float-right" title="FAQs">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="quickstart.html" class="btn btn-neutral" title="Quick Start Guide"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="quickstart.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="faqs.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="https://use.fontawesome.com/540034d990.js" defer></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" defer></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-highlightjs/0.7.1/angular-highlightjs.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" defer></script>
+      <script src="js/main.js" defer></script>
+      <script src="search/main.js" defer></script>
+
+</body>
+</html>
