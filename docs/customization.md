@@ -1162,6 +1162,10 @@ You can select the sections displayed on the homepage (maximum 10 sections) in *
 * **angels-furniture-fullwidth-banner**
 * **angels-furniture-products-tabs**
 * **angels-furniture-blog**
+* **angels-kids-column-banners**
+* **angels-kids-popular-products**
+* **angels-kids-fullwidth-banner**
+* **angels-kids-blog**
 * **angels-products-by-category1**
 * **angels-products-by-category2**
 * **angels-products-by-category3**
@@ -2071,6 +2075,175 @@ You can select the sections displayed on the homepage (maximum 10 sections) in *
 {{/partial}}
 ```
 
+## CUSTOM HOMEPAGE KIDS:
+###Default sections:###
+
+* **angels-kids-column-banners**
+* **angels-kids-popular-products**
+* **angels-kids-fullwidth-banner**
+* **angels-kids-blog**
+
+## - Section Columns Banners
+![homepage 3 banners](img/homepage-style-5-section-1.png)
+
+* You can change content of this section by edit the file `templates/angels-custom.html`.
+* You need to change HTML Code content from `HTML Content` and insert it in between the 2 lines `Paste the custom section code below this line` and `Paste the custom section code above this line`.
+
+![homepage 3 banners](img/how-to-overwrite-a-section-content.png)
+
+* **HTML Content:**
+
+```html
+{{#partial "angels-kids-fullwidth-banner"}}
+<div class="chiara-section angels-section--kidsColumnBanners">
+    <div class="angels-kidsColumnBanners angels-kidsColumnBanners--boxed">
+        <div class="angels-kidsColumnBanners-cols">
+            <div class="angels-kidsColumnBanners-item wow fadeIn">
+                <div class="angels-kidsColumnBanners-item-inner tm-hoverImg">
+                    <div class="angels-kidsColumnBanners-img-container">
+                        <a href="#"><img class="angels-kidsColumnBanners-img lazyload" data-scale="1" src="{{cdn 'assets/img/loading.svg'}}" data-src="//cdn11.bigcommerce.com/s-gcbu0xssif/product_images/uploaded_images/angels-kids-col-banner1.jpg" width="570" height="310" alt="570x310" /></a>
+                    </div>
+                    <div class="angels-kidsColumnBanners-content tm-inview" data-movement="-20">
+                        <p class="angels-kidsColumnBanners-subtitle">girl’s 4-12 year old</p>
+                        <p class="angels-kidsColumnBanners-title">Girl’s Summer</p>
+                        <p class="angels-kidsColumnBanners-action"><a href="#">shop now</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="angels-kidsColumnBanners-item wow fadeIn" data-wow-delay="200ms">
+                <div class="angels-kidsColumnBanners-item-inner tm-hoverImg">
+                    <div class="angels-kidsColumnBanners-img-container">
+                        <a href="#"><img class="angels-kidsColumnBanners-img lazyload" data-scale="1" src="{{cdn 'assets/img/loading.svg'}}" data-src="//cdn11.bigcommerce.com/s-gcbu0xssif/product_images/uploaded_images/angels-kids-col-banner2.jpg" width="570" height="310" alt="570x310" /></a>
+                    </div>
+                    <div class="angels-kidsColumnBanners-content tm-inview" data-movement="-20">
+                        <p class="angels-kidsColumnBanners-subtitle">boy 4-12 year old</p>
+                        <p class="angels-kidsColumnBanners-title">Sweet Boy</p>
+                        <p class="angels-kidsColumnBanners-action"><a href="#">shop now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/partial}}
+```
+
+## - Section Popular Products
+![homepage 3 banners](img/homepage-style-5-section-2.png)
+
+* You can change content of this section by edit the file `templates/angels-custom.html`.
+* You need to change HTML Code content from `HTML Content` and insert it in between the 2 lines `Paste the custom section code below this line` and `Paste the custom section code above this line`.
+
+![homepage 3 banners](img/how-to-overwrite-a-section-content.png)
+
+* **HTML Content:**
+
+```html
+{{#partial "angels-kids-trending-products"}}
+<div class="chiara-section angels-section--kidsTrendingProducts">
+    <div class="angels-kidsTrendingProducts">
+        <h2 class="page-heading">Popular products</h2>
+        <ul class="angels-kidsTrendingProducts-tabs">
+            <li class="angels-kidsTrendingProducts-tab"><a href="http://angels-kids-demo.mybigcommerce.com/boys/">Boys</a></li>
+            <li class="angels-kidsTrendingProducts-tab"><a href="http://angels-kids-demo.mybigcommerce.com/girls/">Girls</a></li>
+            <li class="angels-kidsTrendingProducts-tab"><a href="http://angels-kids-demo.mybigcommerce.com/baby-girls/">Baby girls</a></li>
+            <li class="angels-kidsTrendingProducts-tab"><a href="http://angels-kids-demo.mybigcommerce.com/baby-boys/">Baby boys</a></li>
+        </ul>
+        {{> components/chiara/products/grid products=products.new}}
+        <p class="angels-kidsTrendingProducts-browseAll"><a href="http://angels-kids-demo.mybigcommerce.com/boys/">View all products</a></p>
+    </div>
+</div>
+{{/partial}}
+```
+
+## - Section Fullwidth Banner
+![homepage 3 banners](img/homepage-style-5-section-3.png)
+
+* You can change content of this section by edit the file `templates/angels-custom.html`.
+* You need to change HTML Code content from `HTML Content` and insert it in between the 2 lines `Paste the custom section code below this line` and `Paste the custom section code above this line`.
+
+![homepage 3 banners](img/how-to-overwrite-a-section-content.png)
+
+* **HTML Content:**
+
+```html
+{{#partial "angels-kids-fullwidth-banner"}}
+<div class="chiara-section angels-section--kidsFullwidthBanner">
+    <div class="angels-kidsFullwidthBanner wow fadeIn">
+        <div class="angels-kidsFullwidthBanner-inner">
+            <div class="angels-kidsFullwidthBanner-img-container">
+                <a href="#"><img class="angels-kidsFullwidthBanner-img lazyload" data-scale="1" src="{{cdn 'assets/img/loading.svg'}}" data-src="//cdn11.bigcommerce.com/s-gcbu0xssif/product_images/uploaded_images/angels-kids-fullwidth-banner.jpg" width="1920" height="480" alt="1920x480" /></a>
+            </div>
+            <div class="angels-kidsFullwidthBanner-content tm-inview" data-movement="-20">
+                <p class="angels-kidsFullwidthBanner-subtitle">Discover</p>
+                <p class="angels-kidsFullwidthBanner-title">Mid-season sale</p>
+                <div class="angels-kidsFullwidthBanner-desc">
+                    <p>Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. </p>
+                </div>
+                <p class="angels-kidsFullwidthBanner-action"><a href="#">View more</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+{{/partial}}
+```
+
+## - Section Blog
+![homepage 3 banners](img/homepage-style-5-section-5.png)
+
+* You can change content of this section by edit the file `templates/angels-custom.html`.
+* You need to change HTML Code content from `HTML Content` and insert it in between the 2 lines `Paste the custom section code below this line` and `Paste the custom section code above this line`.
+
+![homepage 3 banners](img/how-to-overwrite-a-section-content.png)
+
+* **HTML Content:**
+
+```html
+{{#partial "angels-cosmetic-blog"}}
+<div class="chiara-section angels-section--blog">
+    <div class="angels-kidsBlog">
+        <div class="angels-kidsBlog-blog wow fadeIn">
+            <h3 class="angels-kidsBlog-title">From our blog</h3>
+            <ul class="angels-kidsBlog-posts">
+                {{#each blog.recent_posts}}
+                    <li class="angels-kidsBlog-posts-item">
+                        <p class="angels-cosmeticBlog-post-date" data-moment-input-format="MMM Do YYYY">{{date_published}}</p>
+                        {{#if tags}}
+                            <ul class="angels-kidsBlog-post-tags">
+                                {{#each tags}}
+                                <li class="angels-kidsBlog-post-tags-item">
+                                    <a href="{{url}}">{{name}}</a>
+                                </li>
+                                {{/each}}
+                            </ul>
+                        {{/if}}
+                        <h4 class="angels-kidsBlog-post-title"><a href="{{url}}">{{title}}</a></h4>
+                        {{#if author}}
+                            <p class="angels-kidsBlog-post-author">{{lang 'blog.posted_by' name=author}}</p>
+                        {{/if}}
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="angels-kidsBlog-video wow fadeIn" data-wow-delay="200ms">
+            <h3 class="angels-kidsBlog-title">Fashion Show</h3>
+            <div class="angels-kidsBlog-video-banner tm-hoverImg">
+                <div class="angels-kidsBlog-video-img-container"><img class="angels-kidsBlog-video-img lazyload" src="{{cdn 'assets/img/loading.svg'}}" data-src="//store-nzb8vo3i1v.mybigcommerce.com/product_images/uploaded_images/angels-kids-blog-video.jpg" width="570" height="360" alt="570x360"></div>
+                <div class="angels-kidsBlog-video-content tm-inview" data-movement="-30">
+                    <p class="angels-kidsBlog-video-title">Moscow show children wear</p>
+                    <p class="angels-kidsBlog-video-action"><a href="#" title="Play">
+                        <span class="fa-stack fa-2x">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-play fa-stack-1x fa-inverse"></i>
+                          </span>
+                    </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/partial}}
+```
 
 ## Products Sections (New / Featured / Bestselling)
 
