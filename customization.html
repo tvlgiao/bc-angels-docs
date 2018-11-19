@@ -141,6 +141,16 @@
         
             <li><a class="toctree-l3" href="#-section-blog_1">- Section Blog</a></li>
         
+            <li><a class="toctree-l3" href="#custom-homepage-kids">CUSTOM HOMEPAGE KIDS:</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-columns-banners_1">- Section Columns Banners</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-popular-products">- Section Popular Products</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-fullwidth-banner_3">- Section Fullwidth Banner</a></li>
+        
+            <li><a class="toctree-l3" href="#-section-blog_2">- Section Blog</a></li>
+        
             <li><a class="toctree-l3" href="#products-sections-new-featured-bestselling">Products Sections (New / Featured / Bestselling)</a></li>
         
             <li><a class="toctree-l3" href="#instagram-photos-feed">Instagram Photos Feed</a></li>
@@ -1330,6 +1340,10 @@ For other sections, edit the file <code>templates/chiara-custom.html</code>.</p>
 <li><strong>angels-furniture-fullwidth-banner</strong></li>
 <li><strong>angels-furniture-products-tabs</strong></li>
 <li><strong>angels-furniture-blog</strong></li>
+<li><strong>angels-kids-column-banners</strong></li>
+<li><strong>angels-kids-popular-products</strong></li>
+<li><strong>angels-kids-fullwidth-banner</strong></li>
+<li><strong>angels-kids-blog</strong></li>
 <li><strong>angels-products-by-category1</strong></li>
 <li><strong>angels-products-by-category2</strong></li>
 <li><strong>angels-products-by-category3</strong></li>
@@ -2213,6 +2227,172 @@ For other sections, edit the file <code>templates/chiara-custom.html</code>.</p>
                 &lt;/li&gt;
             {{/each}}
         &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="custom-homepage-kids">CUSTOM HOMEPAGE KIDS:<a class="headerlink" href="#custom-homepage-kids" title="Permanent link">&para;</a></h2>
+<h3 id="default-sections_4">Default sections:<a class="headerlink" href="#default-sections_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>angels-kids-column-banners</strong></li>
+<li><strong>angels-kids-popular-products</strong></li>
+<li><strong>angels-kids-fullwidth-banner</strong></li>
+<li><strong>angels-kids-blog</strong></li>
+</ul>
+<h2 id="-section-columns-banners_1">- Section Columns Banners<a class="headerlink" href="#-section-columns-banners_1" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-5-section-1.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-kids-fullwidth-banner&quot;}}
+&lt;div class=&quot;chiara-section angels-section--kidsColumnBanners&quot;&gt;
+    &lt;div class=&quot;angels-kidsColumnBanners angels-kidsColumnBanners--boxed&quot;&gt;
+        &lt;div class=&quot;angels-kidsColumnBanners-cols&quot;&gt;
+            &lt;div class=&quot;angels-kidsColumnBanners-item wow fadeIn&quot;&gt;
+                &lt;div class=&quot;angels-kidsColumnBanners-item-inner tm-hoverImg&quot;&gt;
+                    &lt;div class=&quot;angels-kidsColumnBanners-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-kidsColumnBanners-img lazyload&quot; data-scale=&quot;1&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//cdn11.bigcommerce.com/s-gcbu0xssif/product_images/uploaded_images/angels-kids-col-banner1.jpg&quot; width=&quot;570&quot; height=&quot;310&quot; alt=&quot;570x310&quot; /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-kidsColumnBanners-content tm-inview&quot; data-movement=&quot;-20&quot;&gt;
+                        &lt;p class=&quot;angels-kidsColumnBanners-subtitle&quot;&gt;girl’s 4-12 year old&lt;/p&gt;
+                        &lt;p class=&quot;angels-kidsColumnBanners-title&quot;&gt;Girl’s Summer&lt;/p&gt;
+                        &lt;p class=&quot;angels-kidsColumnBanners-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-kidsColumnBanners-item wow fadeIn&quot; data-wow-delay=&quot;200ms&quot;&gt;
+                &lt;div class=&quot;angels-kidsColumnBanners-item-inner tm-hoverImg&quot;&gt;
+                    &lt;div class=&quot;angels-kidsColumnBanners-img-container&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-kidsColumnBanners-img lazyload&quot; data-scale=&quot;1&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//cdn11.bigcommerce.com/s-gcbu0xssif/product_images/uploaded_images/angels-kids-col-banner2.jpg&quot; width=&quot;570&quot; height=&quot;310&quot; alt=&quot;570x310&quot; /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;angels-kidsColumnBanners-content tm-inview&quot; data-movement=&quot;-20&quot;&gt;
+                        &lt;p class=&quot;angels-kidsColumnBanners-subtitle&quot;&gt;boy 4-12 year old&lt;/p&gt;
+                        &lt;p class=&quot;angels-kidsColumnBanners-title&quot;&gt;Sweet Boy&lt;/p&gt;
+                        &lt;p class=&quot;angels-kidsColumnBanners-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="-section-popular-products">- Section Popular Products<a class="headerlink" href="#-section-popular-products" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-5-section-2.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-kids-trending-products&quot;}}
+&lt;div class=&quot;chiara-section angels-section--kidsTrendingProducts&quot;&gt;
+    &lt;div class=&quot;angels-kidsTrendingProducts&quot;&gt;
+        &lt;h2 class=&quot;page-heading&quot;&gt;Popular products&lt;/h2&gt;
+        &lt;ul class=&quot;angels-kidsTrendingProducts-tabs&quot;&gt;
+            &lt;li class=&quot;angels-kidsTrendingProducts-tab&quot;&gt;&lt;a href=&quot;http://angels-kids-demo.mybigcommerce.com/boys/&quot;&gt;Boys&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;angels-kidsTrendingProducts-tab&quot;&gt;&lt;a href=&quot;http://angels-kids-demo.mybigcommerce.com/girls/&quot;&gt;Girls&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;angels-kidsTrendingProducts-tab&quot;&gt;&lt;a href=&quot;http://angels-kids-demo.mybigcommerce.com/baby-girls/&quot;&gt;Baby girls&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;angels-kidsTrendingProducts-tab&quot;&gt;&lt;a href=&quot;http://angels-kids-demo.mybigcommerce.com/baby-boys/&quot;&gt;Baby boys&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        {{&gt; components/chiara/products/grid products=products.new}}
+        &lt;p class=&quot;angels-kidsTrendingProducts-browseAll&quot;&gt;&lt;a href=&quot;http://angels-kids-demo.mybigcommerce.com/boys/&quot;&gt;View all products&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="-section-fullwidth-banner_3">- Section Fullwidth Banner<a class="headerlink" href="#-section-fullwidth-banner_3" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-5-section-3.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-kids-fullwidth-banner&quot;}}
+&lt;div class=&quot;chiara-section angels-section--kidsFullwidthBanner&quot;&gt;
+    &lt;div class=&quot;angels-kidsFullwidthBanner wow fadeIn&quot;&gt;
+        &lt;div class=&quot;angels-kidsFullwidthBanner-inner&quot;&gt;
+            &lt;div class=&quot;angels-kidsFullwidthBanner-img-container&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;angels-kidsFullwidthBanner-img lazyload&quot; data-scale=&quot;1&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//cdn11.bigcommerce.com/s-gcbu0xssif/product_images/uploaded_images/angels-kids-fullwidth-banner.jpg&quot; width=&quot;1920&quot; height=&quot;480&quot; alt=&quot;1920x480&quot; /&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;angels-kidsFullwidthBanner-content tm-inview&quot; data-movement=&quot;-20&quot;&gt;
+                &lt;p class=&quot;angels-kidsFullwidthBanner-subtitle&quot;&gt;Discover&lt;/p&gt;
+                &lt;p class=&quot;angels-kidsFullwidthBanner-title&quot;&gt;Mid-season sale&lt;/p&gt;
+                &lt;div class=&quot;angels-kidsFullwidthBanner-desc&quot;&gt;
+                    &lt;p&gt;Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;p class=&quot;angels-kidsFullwidthBanner-action&quot;&gt;&lt;a href=&quot;#&quot;&gt;View more&lt;/a&gt;&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{{/partial}}
+</code></pre>
+
+<h2 id="-section-blog_2">- Section Blog<a class="headerlink" href="#-section-blog_2" title="Permanent link">&para;</a></h2>
+<p><img alt="homepage 3 banners" src="img/homepage-style-5-section-5.png" /></p>
+<ul>
+<li>You can change content of this section by edit the file <code>templates/angels-custom.html</code>.</li>
+<li>You need to change HTML Code content from <code>HTML Content</code> and insert it in between the 2 lines <code>Paste the custom section code below this line</code> and <code>Paste the custom section code above this line</code>.</li>
+</ul>
+<p><img alt="homepage 3 banners" src="img/how-to-overwrite-a-section-content.png" /></p>
+<ul>
+<li><strong>HTML Content:</strong></li>
+</ul>
+<pre><code class="html">{{#partial &quot;angels-cosmetic-blog&quot;}}
+&lt;div class=&quot;chiara-section angels-section--blog&quot;&gt;
+    &lt;div class=&quot;angels-kidsBlog&quot;&gt;
+        &lt;div class=&quot;angels-kidsBlog-blog wow fadeIn&quot;&gt;
+            &lt;h3 class=&quot;angels-kidsBlog-title&quot;&gt;From our blog&lt;/h3&gt;
+            &lt;ul class=&quot;angels-kidsBlog-posts&quot;&gt;
+                {{#each blog.recent_posts}}
+                    &lt;li class=&quot;angels-kidsBlog-posts-item&quot;&gt;
+                        &lt;p class=&quot;angels-cosmeticBlog-post-date&quot; data-moment-input-format=&quot;MMM Do YYYY&quot;&gt;{{date_published}}&lt;/p&gt;
+                        {{#if tags}}
+                            &lt;ul class=&quot;angels-kidsBlog-post-tags&quot;&gt;
+                                {{#each tags}}
+                                &lt;li class=&quot;angels-kidsBlog-post-tags-item&quot;&gt;
+                                    &lt;a href=&quot;{{url}}&quot;&gt;{{name}}&lt;/a&gt;
+                                &lt;/li&gt;
+                                {{/each}}
+                            &lt;/ul&gt;
+                        {{/if}}
+                        &lt;h4 class=&quot;angels-kidsBlog-post-title&quot;&gt;&lt;a href=&quot;{{url}}&quot;&gt;{{title}}&lt;/a&gt;&lt;/h4&gt;
+                        {{#if author}}
+                            &lt;p class=&quot;angels-kidsBlog-post-author&quot;&gt;{{lang 'blog.posted_by' name=author}}&lt;/p&gt;
+                        {{/if}}
+                    &lt;/li&gt;
+                {{/each}}
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;angels-kidsBlog-video wow fadeIn&quot; data-wow-delay=&quot;200ms&quot;&gt;
+            &lt;h3 class=&quot;angels-kidsBlog-title&quot;&gt;Fashion Show&lt;/h3&gt;
+            &lt;div class=&quot;angels-kidsBlog-video-banner tm-hoverImg&quot;&gt;
+                &lt;div class=&quot;angels-kidsBlog-video-img-container&quot;&gt;&lt;img class=&quot;angels-kidsBlog-video-img lazyload&quot; src=&quot;{{cdn 'assets/img/loading.svg'}}&quot; data-src=&quot;//store-nzb8vo3i1v.mybigcommerce.com/product_images/uploaded_images/angels-kids-blog-video.jpg&quot; width=&quot;570&quot; height=&quot;360&quot; alt=&quot;570x360&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;angels-kidsBlog-video-content tm-inview&quot; data-movement=&quot;-30&quot;&gt;
+                    &lt;p class=&quot;angels-kidsBlog-video-title&quot;&gt;Moscow show children wear&lt;/p&gt;
+                    &lt;p class=&quot;angels-kidsBlog-video-action&quot;&gt;&lt;a href=&quot;#&quot; title=&quot;Play&quot;&gt;
+                        &lt;span class=&quot;fa-stack fa-2x&quot;&gt;
+                            &lt;i class=&quot;fas fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+                            &lt;i class=&quot;fas fa-play fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+                          &lt;/span&gt;
+                    &lt;/a&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 {{/partial}}
