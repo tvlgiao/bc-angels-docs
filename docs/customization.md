@@ -2094,7 +2094,7 @@ You can select the sections displayed on the homepage (maximum 10 sections) in *
 * **HTML Content:**
 
 ```html
-{{#partial "angels-kids-fullwidth-banner"}}
+{{#partial "angels-kids-column-banners"}}
 <div class="chiara-section angels-section--kidsColumnBanners">
     <div class="angels-kidsColumnBanners angels-kidsColumnBanners--boxed">
         <div class="angels-kidsColumnBanners-cols">
